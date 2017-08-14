@@ -1,5 +1,6 @@
 <template>
   <div class="comVelocity">
+    <h3>描述：使用velocity搭配钩子完成复杂动画</h3>
     <input type="text" placeholder="输入X坐标" v-model="posX">
     <input type="text" placeholder="输入Y坐标" v-model="posY">
     <button class="btn" @click="go" ref="btn">start para</button>
@@ -8,7 +9,8 @@
                 @enter="enter"
                 @after-enter="afterEnter"
     >
-      <div v-show="show" class="ball"></div>
+      <!--如果使用v-show需要自行初始化-->
+      <div v-if="show" class="ball"></div>
     </transition>
   </div>
 </template>
@@ -34,11 +36,12 @@
       },
       enter (el, done) {
         Velocity(el, {
-          top: '500px', // 不可以直接写0
-          left: ['500px', [0.09, -0.43, 0.91, 0.38]],
+          top: ['500px', [0.09, -0.43, 0.91, 0.38]],
+          left: '500px',  // 不可以直接写0
           opacity: 0.5, // 不能赋string
           rotateZ: '100deg',
-          scale: 1.5
+          scale: [1.5, 'easeInOutSine'],
+          backgroundColor: '#9f1532'
         }, {
           duration: 2000,
           easing: 'linear',
@@ -71,5 +74,4 @@
       background: rgb(160, 220, 0);
     }
   }
-
 </style>

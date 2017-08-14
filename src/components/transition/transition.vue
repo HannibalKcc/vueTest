@@ -1,5 +1,6 @@
 <template>
   <div class="transition">
+    <h3>描述：使用vue中的transition组件</h3>
     <button @click="show = !show">
       Toggle
     </button>
