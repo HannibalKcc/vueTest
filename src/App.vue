@@ -2,6 +2,7 @@
   <div id="app">
     <div class="routerBox">
       <router-link class="router" v-for="(item, index) in routers" :to="item.to" :key="index">{{item.inf}}</router-link>
+      <hr>
       <router-view></router-view>
     </div>
   </div>
