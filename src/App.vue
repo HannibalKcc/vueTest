@@ -18,8 +18,10 @@
           // vue部分
           {to: '/transition', inf: 'vue-transition'},
           {to: '/propSolt', inf: 'vue-prop-slot'},
-          // 非vue部分
-          {to: '/sort', inf: 'sort'}
+          // 逻辑
+          {to: '/sort', inf: 'logic-sort'},
+          // 工具
+          {to: '/fullPage', inf: 'utils-fullPage'}
         ],
         texts: ['c1', 'c2', 'c3', 'c4', 'c5']
       };
