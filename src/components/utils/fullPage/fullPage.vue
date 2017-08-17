@@ -1,6 +1,6 @@
 <template>
   <div class="fullPage">
-    <div class="section">第一屏</div>
+    <div class="section"><a href="https://alvarotrigo.com/fullPage/#firstPage">fullPage官网</a></div>
     <div class="section">第二屏</div>
     <div class="section">
       <div class="slide">第三屏的第一屏</div>
@@ -13,7 +13,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import '../../../assets/css/jquery.fullPage.css';
   import $ from 'jquery';
   import 'fullPage.js';
   export default {
@@ -22,7 +21,9 @@
     },
     methods: {
       initFullPage () {
-        $('.fullPage').fullpage();
+        $('.fullPage').fullpage({
+          sectionsColor: ['#c2f2f2', '#4BBFC3', '#7BAABE', '#fc1']
+        });
       }
     }
   };

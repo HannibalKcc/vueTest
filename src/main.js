@@ -5,7 +5,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
-import 'jquery'; // eslint-disable-line
+// import 'jquery'; // eslint-disable-line
 import 'vue-fullpage/vue-fullpage.css';
 import VueFullpage from 'vue-fullpage';
 
