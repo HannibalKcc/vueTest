@@ -19,9 +19,9 @@
           {to: '/transition', inf: 'vue-transition'},
           {to: '/propSolt', inf: 'vue-prop-slot'},
           // 非vue部分
-          {to: '/sort', inf: 'sort'}
-        ],
-        texts: ['c1', 'c2', 'c3', 'c4', 'c5']
+          {to: '/sort', inf: 'logic-sort'},
+          {to: '/forLoop', inf: 'logic-es6循环'}
+        ]
       };
     }
   };

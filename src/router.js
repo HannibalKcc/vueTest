@@ -6,6 +6,7 @@ import Transition from '@/components/transition/transition.vue';
 import PropSolt from '@/components/props/slotFather.vue';
 // 逻辑
 import Sort from '@/components/logic/sort.vue';
+import forLoop from '@/components/logic/forLoop.vue';
 
 const routes = [
   // 组件
@@ -22,6 +23,10 @@ const routes = [
   {
     path: '/sort',
     component: Sort
+  },
+  {
+    path: '/forLoop',
+    component: forLoop
   }
 ];
 

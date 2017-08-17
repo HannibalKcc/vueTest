@@ -5,6 +5,7 @@
     <button @click="shuffle">shuffle</button>
     <button @click="getQuicksort">quicksort</button>
     <hr>
+    <h3>描述：对于取值为整数、范围较小、大量数据排序,桶排序相比于快排有明显的优势!</h3>
     <select v-model="seleMin">
       <option v-for="val in min" :value="val">{{val}}</option>
     </select>
@@ -60,7 +61,7 @@
         let t3 = new Date();
         this.quickTime = t2 - t1;
         this.bucketTime = t3 - t2;
-        console.log('计算相等？', a1.toString() === a2.toString());
+        if (a1.toString() !== a2.toString()) alert('计算不等！');
       },
       quicksort (arr) {
         if (arr.length === 0) return [];
