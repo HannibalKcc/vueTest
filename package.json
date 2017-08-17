@@ -11,13 +11,14 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "fullpage.js": "^2.9.4",
     "less": "^2.7.2",
-    "less-loader": "^4.0.3",
+    "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
     "mint-ui": "^2.2.9",
-    "vue": "^2.3.3",
-    "vue-loader": "^11.3.4",
-    "vue-router": "^2.5.3"
+    "vue": "^2.4.2",
+    "vue-fullpage": "^2.0.4",
+    "vue-router": "^2.7.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -55,7 +56,7 @@
     "shelljs": "^0.7.6",
     "url-loader": "^0.5.8",
     "velocity-animate": "^1.5.0",
-    "vue-loader": "^12.1.0",
+    "vue-loader": "^11.3.4",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1",

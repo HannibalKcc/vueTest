@@ -24,7 +24,7 @@
 
 <script type="text/ecmascript-6">
   import _ from 'lodash';
-  import {Toast} from 'mint-ui';
+  import { Toast } from 'mint-ui';
   export default {
     data () {
       return {
