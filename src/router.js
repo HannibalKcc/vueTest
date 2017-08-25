@@ -1,13 +1,15 @@
 import VueRouter from 'vue-router';
 
 // vue部分
-import Transition from '@/components/transition/transition.vue';
-import PropSolt from '@/components/props/slotFather.vue';
+import Transition from './components/transition/transition.vue';
+import PropSolt from './components/props/slotFather.vue';
 // 逻辑
-import Sort from '@/components/logic/sort.vue';
-import ForLoop from '@/components/logic/forLoop.vue';
+import Sort from './components/logic/sort.vue';
+import ForLoop from './components/logic/forLoop.vue';
+import IE from './components/logic/import&export.vue';
+import ObjectStudy from './components/logic/objectStudy.vue';
 // 工具
-import FullPage from '@/components/utils/fullPage/fullPage.vue';
+import FullPage from './components/utils/fullPage/fullPage.vue';
 
 const routes = [
   // vue部分
@@ -28,7 +30,15 @@ const routes = [
     path: '/forLoop',
     component: ForLoop
   },
-  // 插件
+  {
+    path: '/import-export',
+    component: IE
+  },
+  {
+    path: '/objectStudy',
+    component: ObjectStudy
+  },
+  // 工具
   {
     path: '/fullPage',
     component: FullPage
