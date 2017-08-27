@@ -3,8 +3,8 @@
     <div class="routerBox">
       <router-link class="router" v-for="(item, index) in routers" :to="item.to" :key="index">{{item.inf}}</router-link>
       <hr>
-      <router-view></router-view>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -22,7 +22,10 @@
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},
           {to: '/import-export', inf: 'logic-es6 import&export'},
-          {to: '/objectStudy', inf: 'logic-es6 对象拷贝，复制'},
+          {to: '/objectStudy', inf: 'logic-es6 对象问题'},
+          {to: '/touchPenetration', inf: 'logic- 移动端点击穿透'},
+          {to: '/currentTarget', inf: 'logic- target&currentTarget'},
+          {to: '/array', inf: 'logic- 数组问题'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'}
         ]
