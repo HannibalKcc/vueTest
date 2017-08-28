@@ -22,7 +22,7 @@
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},
           {to: '/import-export', inf: 'logic-es6 import&export'},
-          {to: '/objectStudy', inf: 'logic-es6 对象问题'},
+          {to: '/object', inf: 'logic- 对象问题'},
           {to: '/touchPenetration', inf: 'logic- 移动端点击穿透'},
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
@@ -41,11 +41,11 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    margin: 60px 60px 0;
   }
 
   a:visited {
-    color: #b6b96b;
+    color: #313e41;
   }
 
   .routerBox {
@@ -53,7 +53,7 @@
       margin: 10px 5px;
     }
     .router-link-active {
-      color: rgb(25, 240, 229);
+      color: rgb(21, 202, 191);
     }
   }
 </style>

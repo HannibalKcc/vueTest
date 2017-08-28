@@ -7,7 +7,7 @@ import PropSolt from './components/props/slotFather.vue';
 import Sort from './components/logic/sort.vue';
 import ForLoop from './components/logic/forLoop.vue';
 import IE from './components/logic/import&export.vue';
-import ObjectStudy from './components/logic/objectStudy.vue';
+import Object from './components/logic/object.vue';
 import TouchPenetration from './components/logic/touchPenetration.vue';
 import CurrentTarget from './components/logic/currentTarget.vue';
 import Array from './components/logic/array.vue';
@@ -39,8 +39,8 @@ const routes = [
     component: IE
   },
   {
-    path: '/objectStudy',
-    component: ObjectStudy
+    path: '/object',
+    component: Object
   },
   {
     path: '/touchPenetration',
