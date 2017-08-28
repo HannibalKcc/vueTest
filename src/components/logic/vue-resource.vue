@@ -1,5 +1,7 @@
 <template>
+<div class="vue-resource">
 
+</div>
 </template>
 
 <script type="text/ecmascript-6">
