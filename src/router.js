@@ -1,8 +1,10 @@
 import VueRouter from 'vue-router';
 
 // vue部分
-import Transition from './components/transition/transition.vue';
-import PropSolt from './components/props/slotFather.vue';
+import Transition from './components/vueSelf/transition/transition.vue';
+import PropSolt from './components/vueSelf/props/slotFather.vue';
+import Resource from './components/vueSelf/resource.vue';
+
 // 逻辑
 import Sort from './components/logic/sort.vue';
 import ForLoop from './components/logic/forLoop.vue';
@@ -24,6 +26,10 @@ const routes = [
   {
     path: '/propSolt',
     component: PropSolt
+  },
+  {
+    path: '/resource',
+    component: Resource
   },
   // 逻辑
   {

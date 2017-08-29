@@ -18,6 +18,7 @@
           // vue部分
           {to: '/transition', inf: 'vue-transition'},
           {to: '/propSolt', inf: 'vue-prop-slot'},
+          {to: '/resource', inf: 'vue-Resource'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},

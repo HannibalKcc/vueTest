@@ -1,3 +1,4 @@
-/**
- * Created by zhuhu on 2017/8/28.
- */
+import Vue from 'vue';
+import VueResource from 'vue-resource';
+
+Vue.use(VueResource);
