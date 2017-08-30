@@ -10,11 +10,17 @@
     <br>
     <div>replace()统计结果——{{resultReplace}}</div>
     <div>出现最多的元素——{{maxObj2.key}}，次数：{{maxObj2.max}}</div>
+
+    <hr>
+    <h3>描述：数组转成无逗号字符串</h3>
+    <span>arr1.toString().replace(/,/g,'')——{{arr1.toString().replace(/,/g,'')}}</span>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
+    mounted () {
+    },
     data () {
       return {
         arr1: ['a', 'b', 562, 'c', 'c', '93', 'aaa', 'b', 'b', 562, 'c', 'z', 'k', 'a', '39', 'c', 'vv', 'd', 'c', 'd'],
@@ -31,7 +37,10 @@
         this.ariseMax();
       },
       reduce () {
-        this.resultReduce = this.arr1.reduce((preVal, val, index) => (preVal[val]++ || (preVal[val] = 1), preVal), {}); // eslint-disable-line
+        this.resultReduce = this.arr1.reduce((preVal, val, index) => {
+          preVal[val]++ || (preVal[val] = 1);
+          return preVal;
+        }, {});
       },
       replace () {
         let tmp = {};

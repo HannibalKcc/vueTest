@@ -11,8 +11,10 @@
     },
     methods: {
       ajaxTest () {
-        this.$http.get('http://localhost:3000').then(res => {
+        this.$http.get('http://localhost:3000/test').then(res => {
+            console.log(res);
         }, res => {
+            console.log(res);
         });
       }
     }
