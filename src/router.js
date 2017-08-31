@@ -13,6 +13,7 @@ import Object from './components/logic/object.vue';
 import TouchPenetration from './components/logic/touchPenetration.vue';
 import CurrentTarget from './components/logic/currentTarget.vue';
 import Array from './components/logic/array.vue';
+import Mobile1px from './components/logic/mobile1px.vue';
 
 // 工具
 import FullPage from './components/utils/fullPage/fullPage.vue';
@@ -59,6 +60,10 @@ const routes = [
   {
     path: '/array',
     component: Array
+  },
+  {
+    path: '/mobile1px',
+    component: Mobile1px
   },
   // 工具
   {

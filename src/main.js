@@ -4,9 +4,10 @@ import App from './App';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
+// import 'jquery'; // eslint-disable-line
+import './components/utils/flexible-Nlint.js'; // 淘宝rem
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
-// import 'jquery'; // eslint-disable-line
 import 'vue-fullpage/vue-fullpage.css';
 import VueFullpage from 'vue-fullpage';
 

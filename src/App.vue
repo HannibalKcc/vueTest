@@ -5,13 +5,17 @@
       <hr>
     </div>
     <router-view></router-view>
+    <flotage-qr-code></flotage-qr-code>
   </div>
 </template>
 
 <script>
+  import flotageQrCode from './components/others/flotageQrCode.vue';
   export default {
     name: 'app',
-    components: {},
+    components: {
+       flotageQrCode
+    },
     data () {
       return {
         routers: [
@@ -27,6 +31,7 @@
           {to: '/touchPenetration', inf: 'logic- 移动端点击穿透'},
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
+          {to: '/mobile1px', inf: 'logic- 移动端1px问题'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'}
         ]

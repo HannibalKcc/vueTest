@@ -908,7 +908,7 @@
             lazyLoad(section);
             playMedia(section);
             options.scrollOverflowHandler.afterLoad();
-            
+
             if(isDestinyTheStartingSection()){
                 $.isFunction( options.afterLoad ) && options.afterLoad.call(section, section.data('anchor'), (section.index(SECTION_SEL) + 1));
             }
@@ -922,7 +922,7 @@
         function isDestinyTheStartingSection(){
             var anchors =  window.location.hash.replace('#', '').split('/');
             var destinationSection = getSectionByAnchor(decodeURIComponent(anchors[0]));
-    
+
             return !destinationSection.length || destinationSection.length && destinationSection.index() === startingSection.index();
         }
 
@@ -1635,7 +1635,7 @@
 
             var panel = getSlideOrSection(destiny);
             var element;
-            
+
             panel.find('img[data-src], img[data-srcset], source[data-src], audio[data-src], iframe[data-src]').each(function(){
                 element = $(this);
 
@@ -1926,7 +1926,7 @@
                     break;
 
                 default:
-                    return; // exit this handler for other keys
+                    return; // exit this handler for others keys
             }
         }
 
