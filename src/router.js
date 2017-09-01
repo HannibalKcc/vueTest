@@ -14,6 +14,7 @@ import TouchPenetration from './components/logic/touchPenetration.vue';
 import CurrentTarget from './components/logic/currentTarget.vue';
 import Array from './components/logic/array.vue';
 import Mobile1px from './components/logic/mobile1px.vue';
+import IIFE from './components/logic/IIFE.vue';
 
 // 工具
 import FullPage from './components/utils/fullPage/fullPage.vue';
@@ -64,6 +65,10 @@ const routes = [
   {
     path: '/mobile1px',
     component: Mobile1px
+  },
+  {
+    path: '/IIFE',
+    component: IIFE
   },
   // 工具
   {

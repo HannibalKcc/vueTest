@@ -1,4 +1,6 @@
 (function (win, lib) {
+  if (win.navigator.appVersion.match(/windows/gi)) return;  // PC端？
+  console.warn('移动端——已处理rem');
   var doc = win.document;
   var docEl = doc.documentElement;
   var metaEl = doc.querySelector('meta[name="viewport"]');
@@ -36,7 +38,6 @@
     var isIPhone = win.navigator.appVersion.match(/iphone/gi);
     var devicePixelRatio = win.devicePixelRatio;
     if (isIPhone) {
-      console.log('IPhone!');
       // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
       if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
         dpr = 3;
