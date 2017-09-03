@@ -7,7 +7,6 @@
 <script type="text/ecmascript-6">
   export default {
     mounted () {
-
     },
     methods: {
       ajaxTest () {
