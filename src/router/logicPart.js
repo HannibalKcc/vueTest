@@ -8,6 +8,8 @@ import CurrentTarget from '../components/logic/currentTarget.vue';
 import Array from '../components/logic/array.vue';
 import Mobile1px from '../components/logic/mobile1px.vue';
 import IIFE from '../components/logic/IIFE.vue';
+import SVG from '../components/logic/svg.vue';
+import This from '../components/logic/this.vue';
 
 export default [
   {
@@ -43,7 +45,15 @@ export default [
     component: Mobile1px
   },
   {
-    path: '/IIFE',
+    path: '/iife',
     component: IIFE
+  },
+  {
+    path: '/svg',
+    component: SVG
+  },
+  {
+    path: '/this',
+    component: This
   }
 ];

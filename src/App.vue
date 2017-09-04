@@ -32,7 +32,9 @@
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
           {to: '/mobile1px', inf: 'logic- 移动端1px问题'},
-          {to: '/IIFE', inf: 'logic- 立即执行函数'},
+          {to: '/iife', inf: 'logic- 立即执行函数'},
+          {to: '/svg', inf: 'logic- svg'},
+          {to: '/this', inf: 'logic- this问题'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'}
         ]
