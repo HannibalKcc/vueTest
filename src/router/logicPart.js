@@ -10,6 +10,7 @@ import Mobile1px from '../components/logic/mobile1px.vue';
 import IIFE from '../components/logic/IIFE.vue';
 import SVG from '../components/logic/svg.vue';
 import This from '../components/logic/this.vue';
+import CondenseImg from '../components/logic/condenseImg.vue';
 
 export default [
   {
@@ -55,5 +56,9 @@ export default [
   {
     path: '/this',
     component: This
+  },
+  {
+    path: '/condenseImg',
+    component: CondenseImg
   }
 ];

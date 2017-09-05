@@ -14,7 +14,7 @@
   export default {
     name: 'app',
     components: {
-       flotageQrCode
+      flotageQrCode
     },
     data () {
       return {
@@ -35,6 +35,7 @@
           {to: '/iife', inf: 'logic- 立即执行函数'},
           {to: '/svg', inf: 'logic- svg'},
           {to: '/this', inf: 'logic- this问题'},
+          {to: '/condenseImg', inf: 'logic- 压缩图片'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'}
         ]

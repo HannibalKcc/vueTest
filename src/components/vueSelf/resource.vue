@@ -1,6 +1,7 @@
 <template>
   <div class="resource">
     <button @click="ajaxTest">发送请求</button>
+    <img width="50" src="http://localhost:3000/public/img/logo.png" title="后台获取的图片">
   </div>
 </template>
 
