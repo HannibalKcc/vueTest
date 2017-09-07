@@ -11,6 +11,7 @@ import IIFE from '../components/logic/IIFE.vue';
 import SVG from '../components/logic/svg.vue';
 import This from '../components/logic/this.vue';
 import CondenseImg from '../components/logic/condenseImg.vue';
+import RegExp from '../components/logic/regExp.vue';
 
 export default [
   {
@@ -60,5 +61,9 @@ export default [
   {
     path: '/condenseImg',
     component: CondenseImg
+  },
+  {
+    path: '/regExp',
+    component: RegExp
   }
 ];

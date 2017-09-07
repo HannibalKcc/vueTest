@@ -55,6 +55,19 @@
         let old = 'old';  // eslint-disable-line
         this.obj6.old = 88;
         // this.obj6.'error' 报错！点后面不能加字符串
+      },
+      objMixin (source) {
+        if (arguments.length === 1) return source;
+        let tmp = JSON.toString(JSON.stringify(source));
+        let b = arguments[2];
+        for (let key in b) {
+          if (typeof tmp[key] === 'object' && typeof b[key] === 'object') {
+            tmp[key] = this.objMixin(tmp[key], b[key]);
+          } else if (!tmp[key]) {
+            tmp[key] = b[key];
+          }
+        }
+        return this.objMixin(tmp, arguments.slice(1));
       }
     }
   };

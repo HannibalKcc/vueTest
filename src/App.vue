@@ -36,6 +36,7 @@
           {to: '/svg', inf: 'logic- svg'},
           {to: '/this', inf: 'logic- this问题'},
           {to: '/condenseImg', inf: 'logic- 压缩图片'},
+          {to: '/regExp', inf: 'logic- 正则表达式的各种验证'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'}
         ]
