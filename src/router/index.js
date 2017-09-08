@@ -4,7 +4,7 @@ import utilsPart from './utilsPart.js';
 
 import VueRouter from 'vue-router';
 
-const routes = [].concat(vuePart, logicPart, utilsPart);
+const routes = [...vuePart, ...logicPart, ...utilsPart];
 
 const router = new VueRouter({
   routes

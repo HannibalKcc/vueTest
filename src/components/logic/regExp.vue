@@ -2,9 +2,9 @@
   <div class="regExp">
     <h3>描述：正则表达式的各种验证</h3>
     <div class="bracket">
+      <span>验证括号封闭正确——</span>
       <input type="text" v-model="bracket.txt">
-      <button @click="bracketF">括号匹配</button>
-      <span>{{bracket.res}}</span>
+      <span>{{bracketF()}}</span>
     </div>
   </div>
 </template>
@@ -14,35 +14,30 @@
     data () {
       return {
         bracket: {
-          txt: '(){}{{}}',
+          txt: '(123){}',
           res: false
         }
       };
     },
     methods: {
       bracketF () {
-        console.log(/[(){}]*/g.exec(this.bracket.txt));
-        let stack = /[(){}]*/g.exec(this.bracket.txt).split('');
-        let tmp = stack;
-        let flag = 1;
-        tmp.forEach((val, index) => {
-          if (val === ')' && stack[stack.length - 1] === '(' ||
-            val === ']' && stack[stack.length - 1] === '[' ||
-            val === '}' && stack[stack.length - 1] === '{' ||
-            val === '{' && stack[stack.length - 1] === '}') {
+        let tmp = this.bracket.txt.replace(/[^()\[\]{}]/g, '').split(''); // eslint-disable-line
+        let stack = [];
+        for (let key of tmp) {
+          if ((key === ')' && stack[stack.length - 1] === '(') ||
+            (key === ']' && stack[stack.length - 1] === '[') ||
+            (key === '}' && stack[stack.length - 1] === '{') ||
+            (key === '{' && stack[stack.length - 1] === '}')) {
             stack.pop();
           } else {
-            flag = 0;
+            stack.push(key);
           }
-        });
-        if (stack.length === 0 && flag === 1) {
-          return 1;
-        } else {
-          return 0;
         }
+        return stack.length === 0 ? '匹配' : '不匹配';
       }
     }
-  };
+  }
+  ;
 </script>
 
 <style scoped rel="stylesheet/less" type="text/less" lang="less">

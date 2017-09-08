@@ -19,6 +19,9 @@
     <hr>
     <h3>描述：对象与[]</h3>
     <span>{{obj6}}</span>
+    <hr>
+    <h3>描述：对象的深度合并</h3>
+    <span>{{objMixin(mixinA, mixinB)}}</span>
   </div>
 </template>
 
@@ -35,7 +38,25 @@
         obj3: '',
         obj4: '',
         obj5: '',
-        obj6: {}
+        obj6: {},
+        mixinA: {
+          a1: 1,
+          a2: 2,
+          a3: {
+            b1: 13,
+            b2: 14,
+            b3: 15
+          },
+          a4: 4
+        },
+        mixinB: {
+          a3: {
+            b4: 14,
+            b9: 19
+          },
+          a5: 5
+        },
+        minxinRes: {}
       };
     },
     methods: {
@@ -57,17 +78,28 @@
         // this.obj6.'error' 报错！点后面不能加字符串
       },
       objMixin (source) {
-        if (arguments.length === 1) return source;
-        let tmp = JSON.toString(JSON.stringify(source));
-        let b = arguments[2];
-        for (let key in b) {
-          if (typeof tmp[key] === 'object' && typeof b[key] === 'object') {
-            tmp[key] = this.objMixin(tmp[key], b[key]);
-          } else if (!tmp[key]) {
-            tmp[key] = b[key];
+        if (arguments.length === 1 || arguments[2] === []) return source;  // 退出循环
+        let s = JSON.parse(JSON.stringify(source));
+        let arg = [];
+        for (let i = 0; i < arguments.length; i++) {
+          arg[i] = arguments[i];
+        }
+        let tar = arg[1];
+        for (let key in tar) {
+          if (typeof s[key] === 'object' && typeof tar[key] === 'object') {
+            s[key] = this.objMixin(s[key], tar[key]);
+          } else if (!s[key]) {
+            s[key] = tar[key];
+          } else {
+            // TODO 是否遗漏了什么？
           }
         }
-        return this.objMixin(tmp, arguments.slice(1));
+        if (arg.slice(2).length === 0) {
+          return s;
+        } else {
+          arg.splice(1, 2, s);  // 检测到多余2个参数后，剔除已合并参数，刷新source
+          return this.objMixin.apply(this.objMixin, arg); // apply改变传参方式
+        }
       }
     }
   };
