@@ -13,7 +13,9 @@
 
     <hr>
     <h3>描述：数组转成无逗号字符串</h3>
-    <span>arr1.toString().replace(/,/g,'')——{{arr1.toString().replace(/,/g,'')}}</span>
+    <span>arr1.toString().replace(/,/g,'')——{{arr1.toString().replace(/,/g, '')}}</span>
+    <h3>描述：String、Map、Set转化成为数组</h3>
+    <span>Array.from()——{{}}</span>
   </div>
 </template>
 
@@ -27,7 +29,8 @@
         resultReduce: {},
         resultReplace: {},
         maxObj1: {},
-        maxObj2: {}
+        maxObj2: {},
+        str1: 'String转化数组'
       };
     },
     methods: {
@@ -40,11 +43,12 @@
         this.resultReduce = this.arr1.reduce((preVal, val, index) => {
           preVal[val]++ || (preVal[val] = 1);
           return preVal;
-        }, {});
+        }, {}); // reduce() 别忘了传递初始值
       },
       replace () {
         let tmp = {};
         this.arr1.toString().replace(/(\w+)/g, ($1) => {
+          // 这里$1是正则表达式匹配到第一组的内容
           tmp[$1] ? tmp[$1]++ : tmp[$1] = 1;
         });
         this.resultReplace = tmp;
@@ -53,7 +57,6 @@
         // reduce
         let maxObj = {max: 0};
         for (let key in this.resultReduce) {
-          console.log(key, this.resultReduce[key]);
           if (this.resultReduce[key] > maxObj.max) {
             maxObj = {max: this.resultReduce[key], key};
           }
@@ -63,7 +66,6 @@
         // replace
         maxObj = {max: 0};
         for (let key in this.resultReplace) {
-          console.log(key, this.resultReplace[key]);
           if (this.resultReplace[key] > maxObj.max) {
             maxObj = {max: this.resultReplace[key], key};
           }

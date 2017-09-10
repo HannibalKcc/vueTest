@@ -32,21 +32,22 @@
         });
       },
       nativeForOf () {
-        console.log('---forOf遍历数组---');
-        { // 添加的块级作用域
-          let index = 0;
-          for (let val of this.arr1) { // forOf对于数组无法简单地获取index
-            if (val === 346) {
-              break;
-            } else if (val === 10) {
-              return;
-            }
-            console.log(val, index);
-            index++;
+        console.log('---for of遍历数组---');
+        /**
+         * 实际上for of调用的是数据结构的Iterator接口（[]，string，Map， Set，参数args，DOM Nodelist已经自带），
+         * 设置一个对象 [Symbol.iterator]() { ... }
+         * 具体见 http://es6.ruanyifeng.com/#docs/iterator#字符串的-Iterator-接口
+         * */
+        for (let keyVal of this.arr1.entries()) { // forOf对于数组无法简单地获取index
+          if (keyVal === 346) {
+            break;
+          } else if (keyVal === 10) {
+            return;
           }
+          console.log(keyVal);
         }
-        console.log('---forOf遍历普通对象---');
-        for (var key of Object.keys(this.object1)) {  // 遍历非set、map对象需要使用Object.keys()方法
+        console.log('---for of遍历普通对象---');
+        for (var key of Object.keys(this.object1)) {  // 遍历与数组不相似的对象需要使用Object的entries()、keys()、values()
           console.log(key + ': ' + this.object1[key]);
         }
       },
@@ -55,7 +56,7 @@
          * forIn数组的话，可能是随机遍历、会遍历出数组的自定义属性
          * 用于遍历对象是理想的选择，这也是它的本职工作
          */
-        console.log('---forIn遍历对象---');
+        console.log('---for in遍历对象---');
         for (let key in this.object1) {
           console.log(key, this.object1[key]);  // 这里无法直接使用this.object1.key
         }
