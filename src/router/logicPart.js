@@ -12,6 +12,7 @@ import SVG from '../components/logic/svg.vue';
 import This from '../components/logic/this.vue';
 import CondenseImg from '../components/logic/condenseImg.vue';
 import RegExp from '../components/logic/regExp.vue';
+import MVVM from '../components/logic/MVVM/MVVM.vue';
 
 export default [
   {
@@ -65,5 +66,9 @@ export default [
   {
     path: '/regExp',
     component: RegExp
+  },
+  {
+    path: '/mvvm',
+    component: MVVM
   }
 ];
