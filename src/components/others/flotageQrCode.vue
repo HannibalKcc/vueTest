@@ -1,9 +1,9 @@
 <template>
   <div class="flotageQrCode">
     <div class="content">
-      <input type="text" placeholder="请输入ip" v-model="localIp">
+      <span>IP:&nbsp;</span><input type="text" style="width: 8em;" v-model="localIp">
       <br>
-      <a :href="codeUrl" target="_blank" title="草料二维码">草料二维码</a>
+      <a :href="codeUrl" target="_blank" title="生成草料二维码">生成草料二维码</a>
     </div>
   </div>
 </template>
@@ -28,12 +28,12 @@
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   .flotageQrCode {
     position: fixed;
-    top: 250px;
+    top: 800px;
     left: 0;
     box-sizing: border-box;
     width: 200px;
     transform: translateX(-180px);
-    padding: 10px 0;
+    padding: 10px;
     border: 3px solid #00B7FF;
     background-color: #ddd;
     transition: transform 0.7s;

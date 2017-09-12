@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <div class="routerBox">
-      <router-link class="router" v-for="(item, index) in routers" :to="item.to" :key="index">{{item.inf}}</router-link>
-      <hr>
+    <div class="content">
+      <ul class="routerBox">
+        <a href="https://github.com/HannibalKcc" title="github地址"><img src="./assets/img/head.jpg" height="100" width="100"/></a>
+        <li v-for="(item, index) in routers">
+          <router-link class="router" :to="item.to" :key="index">{{item.inf}}</router-link>
+        </li>
+      </ul>
+      <div class="viewBox">
+        <router-view></router-view>
+      </div>
     </div>
-    <router-view></router-view>
     <flotage-qr-code></flotage-qr-code>
   </div>
 </template>
@@ -39,7 +45,8 @@
           {to: '/regExp', inf: 'logic- 正则表达式的各种验证'},
           {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
           // 工具
-          {to: '/fullPage', inf: 'utils-fullPage'}
+          {to: '/fullPage', inf: 'utils-fullPage'},
+          {to: '/mintUI', inf: 'utils-mintUI'}
         ]
       };
     }
@@ -48,24 +55,40 @@
 
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   #app {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 60px 10px 0;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin: 60px 60px 0;
+
   }
 
   a:visited {
     color: #313e41;
   }
 
+  .content {
+    display: flex;
+    height: 100%;
+  }
+
   .routerBox {
+    flex: 0 0 200px;
+    border-right: 3px solid #404040;
+    text-align: left;
     .router {
       margin: 10px 5px;
     }
     .router-link-active {
-      color: rgb(21, 202, 191);
+      color: rgb(66, 185, 202);
     }
+  }
+
+  .viewBox {
+    flex: 1;
   }
 </style>
