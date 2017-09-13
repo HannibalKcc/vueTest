@@ -2,6 +2,7 @@
 import Transition from '../components/vueSelf/transition/transition.vue';
 import PropSolt from '../components/vueSelf/props/slotFather.vue';
 import Resource from '../components/vueSelf/resource.vue';
+import Tree from '../components/logic/tree/tree.vue';
 
 export default [
   {
@@ -15,5 +16,9 @@ export default [
   {
     path: '/resource',
     component: Resource
+  },
+  {
+    path: '/tree',
+    component: Tree
   }
 ];

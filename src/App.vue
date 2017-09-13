@@ -2,7 +2,9 @@
   <div id="app">
     <div class="content">
       <ul class="routerBox">
-        <a href="https://github.com/HannibalKcc" title="github地址"><img src="./assets/img/head.jpg" height="100" width="100"/></a>
+        <a href="https://github.com/HannibalKcc" target="_blank" title="github地址">
+          <img src="./assets/img/head.jpg" height="100" width="100"/>
+        </a>
         <li v-for="(item, index) in routers">
           <router-link class="router" :to="item.to" :key="index">{{item.inf}}</router-link>
         </li>
@@ -29,6 +31,7 @@
           {to: '/transition', inf: 'vue-transition'},
           {to: '/propSolt', inf: 'vue-prop-slot'},
           {to: '/resource', inf: 'vue-Resource'},
+          {to: '/tree', inf: 'vue- 递归组件与树形图'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},

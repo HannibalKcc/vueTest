@@ -1,15 +1,14 @@
 <template>
   <div class="messageBox">
-    <p class="txtIndent">
+    <h3>
       描述：在参数message中，是可以内部html标签的。但是vue的任何指令都无效了
-    </p>
+    </h3>
     <button @click="msgBox">打开提示框</button>
     <button @click="alertBox">打开alert提示框</button>
     <!--<button @click="confirmBox">打开confirm提示框</button>-->
     <!--<button @click="promptBox">打开prompt提示框</button>-->
   </div>
 </template>
-
 <script type="text/ecmascript-6">
   import {MessageBox} from 'mint-ui';
   export default {

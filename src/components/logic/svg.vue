@@ -3,18 +3,13 @@
     <div class="content">
       <h3>描述：SVG描边</h3>
       <svg class="stroke" width="800" height="200">
-        <text class="text text1" text-anchor="middle" x="50%" y="50%">
-          awesome storke！
+        <text class="text" text-anchor="middle" x="50%" y="50%"
+        v-for="(item, index) in 4" :class="'text' + (index + 1)">
+          awesome storke!
         </text>
-        <text class="text text2" text-anchor="middle" x="50%" y="50%">
-          awesome storke！
-        </text>
-        <text class="text text3" text-anchor="middle" x="50%" y="50%">
-          awesome storke！
-        </text>
-        <text class="text text4" text-anchor="middle" x="50%" y="50%">
-          awesome storke！
-        </text>
+        <text class="text" text-anchor="middle" x="50%" y="80%"
+        v-for="(item, index) in 4" :class="'text' + (index + 1)">
+          中文效果
         </text>
       </svg>
     </div>
