@@ -49,7 +49,8 @@
           {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'},
-          {to: '/mintUI', inf: 'utils-mintUI'}
+          {to: '/mintUI', inf: 'utils-mintUI'},
+          {to: '/getPhoto', inf: 'utils-调用摄像头'}
         ]
       };
     }

@@ -14,7 +14,7 @@
     },
     data () {
       return {
-        localIp: '192.168.1.123'
+        localIp: '192.168.1.115'
       };
     },
     computed: {
