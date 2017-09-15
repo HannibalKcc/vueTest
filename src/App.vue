@@ -41,16 +41,18 @@
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
           {to: '/mobile1px', inf: 'logic- 移动端1px问题'},
+          {to: '/getPhoto', inf: 'utils-调用摄像头'},
           {to: '/iife', inf: 'logic- 立即执行函数'},
           {to: '/svg', inf: 'logic- svg'},
           {to: '/this', inf: 'logic- this问题'},
           {to: '/condenseImg', inf: 'logic- 压缩图片'},
           {to: '/regExp', inf: 'logic- 正则表达式的各种验证'},
           {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
+          {to: '/navigatorAPI', inf: 'logic- navigator'},
           // 工具
           {to: '/fullPage', inf: 'utils-fullPage'},
           {to: '/mintUI', inf: 'utils-mintUI'},
-          {to: '/getPhoto', inf: 'utils-调用摄像头'}
+          {to: '/aMap', inf: 'utils-高德地图'}
         ]
       };
     }

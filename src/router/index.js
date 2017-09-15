@@ -1,6 +1,6 @@
-import vuePart from './vuePart.js';
-import logicPart from './logicPart.js';
-import utilsPart from './utilsPart.js';
+import vuePart from './src/vuePart.js';
+import logicPart from './src/logicPart.js';
+import utilsPart from './src/utilsPart.js';
 
 import VueRouter from 'vue-router';
 
