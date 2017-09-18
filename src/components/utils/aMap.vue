@@ -5,8 +5,8 @@
   </div>
 </template>
 
-<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.0&key=1698fdc3e94b89f0f10b87a6605a350f"></script>
 <script type="text/ecmascript-6">
+  import AMap from 'AMap';
   export default {
     mounted () {
       this.initMap();
@@ -36,6 +36,11 @@
 </script>
 
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
+  .aMap {
+    width: 100%;
+    height: 100%;
+  }
+
   #container {
     width: 100%;
     height: 100%;
