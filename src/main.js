@@ -8,6 +8,7 @@ import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import 'vue-fullpage/vue-fullpage.css';
 import VueFullpage from 'vue-fullpage';
+import './components/utils/vee-validate/index.js';
 
 import router from './router/index.js';
 import './api/index.js';  // 引入vue-reource
