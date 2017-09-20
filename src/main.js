@@ -3,7 +3,7 @@
 import App from './App';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import './components/utils/flexible-Nlint.js'; // 淘宝移动端rem
+import './components/utils/flexible/flexible-Nlint.js'; // 淘宝移动端rem
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import 'vue-fullpage/vue-fullpage.css';

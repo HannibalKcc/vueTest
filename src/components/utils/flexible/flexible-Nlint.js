@@ -1,5 +1,6 @@
+// 淘宝rem
 (function (win, lib) {
-  if (win.navigator.appVersion.match(/windows/gi)) return;  // PC端？
+  if (win.navigator.appVersion.match(/windows/gi)) return;  // PC端
   console.warn('移动端——已处理rem');
   var doc = win.document;
   var docEl = doc.documentElement;
