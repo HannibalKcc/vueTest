@@ -15,6 +15,10 @@
         <my-com v-model="testMobile" v-validate="'required|mobile'" name="testMobile"></my-com>
         <span v-show="errors.has('testMobile')">{{errors.first('testMobile')}}</span>
       </div>
+      <div class="eg4">
+        <my-com2 :imgSrc="imglist[0]" placeTxt="必填" v-model="test4" v-validate="'required'" name="testCom2"></my-com2>
+        <span v-show="errors.has('testCom2')">{{errors.first('testCom2')}}</span>
+      </div>
       <div class="err" v-show="errors.any()">检测所有表单：{{errors.all()[0]}}!</div>
     </div>
   </div>
@@ -22,12 +26,16 @@
 
 <script type="text/ecmascript-6">
   import myCom from './src/myCom.vue';
+  import myCom2 from './src/inpLine.vue';
+  import img1 from '../../../assets/img/logo.png';
   export default {
-    components: {myCom},
+    components: {myCom, myCom2},
     data () {
       return {
         test: '测试文本',
-        testMobile: '15912346789'
+        testMobile: '15912346789',
+        test4: null,
+        imglist: [img1]
       };
     }
   };
@@ -38,7 +46,8 @@
     padding: 0 80px;
     text-align: left;
   }
-  .err{
+
+  .err {
     color: brown;
   }
 </style>
