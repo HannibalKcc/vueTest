@@ -53,7 +53,8 @@
           {to: '/fullPage', inf: 'utils-fullPage'},
           {to: '/mintUI', inf: 'utils-mintUI'},
           {to: '/aMap', inf: 'utils-高德地图'},
-          {to: '/veeValidate', inf: 'veeValidate表单验证'}
+          {to: '/veeValidate', inf: 'veeValidate表单验证'},
+          {to: '/wx', inf: '微信'}
         ]
       };
     }

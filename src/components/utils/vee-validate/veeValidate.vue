@@ -1,10 +1,10 @@
 <template>
   <div class="veeValidate">
     <h3>描述：vee-validate表单验证</h3>
+    <p>vee-validate必须摸一下input后才有效果</p>
     <div class="base">
       <div class="eg1">
-        <input v-validate="'required|email'" name="email"
-               type="text" placeholder="Email">
+        <input v-validate="'required|email'" name="email" type="text" placeholder="Email" v-model="emialTest">
         <span v-show="errors.has('email')">{{ errors.first('email') }}</span>
       </div>
       <div class="eg2">
@@ -26,6 +26,7 @@
     components: {myCom},
     data () {
       return {
+        emialTest: '323',
         test: '测试文本',
         testMobile: '15912346789'
       };
@@ -38,7 +39,8 @@
     padding: 0 80px;
     text-align: left;
   }
-  .err{
+
+  .err {
     color: brown;
   }
 </style>

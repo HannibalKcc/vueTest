@@ -2,7 +2,11 @@
   <div class="aMap">
     <h3>描述：高德地图应用</h3>
     <div id="container" tabindex="0"></div>
-    <div class="setCenter" @click="setCenter">设置中心点</div>
+    <div class="controlWrap">
+      <div class="addCloudData" @click="addCloudData">向后台添加数据</div>
+      <div class="addCloudData" @click="delCloudData">向后台删除数据</div>
+      <div class="addCloudData" @click="updateCloudData">向后台更新数据</div>
+    </div>
   </div>
 </template>
 
@@ -63,13 +67,42 @@
           // AMap.event.addListener(that.theGeolocation, 'error', that.onLocError);  // 返回定位出错信息
         });
       },
-      setCenter () {
-        // TODO 设置中心点
+      addCloudData () {
+        let reqData = {
+          key: '8d0abd06ff69ef516a7f9b4f1b01ee5d',
+          tableid: '59b9e4742376c11dabff9f76',
+          loctype: 2,
+          /* eslint-disable */
+          // 双引号与stringify必不可少（历史遗留问题）
+          data: JSON.stringify({
+            "_name": "apiTest",
+            "_address": "北京市朝阳区望京阜通东大街6号院3号楼"
+          })
+        };
+        this.$http.post('http://yuntuapi.amap.com/datamanage/data/create', reqData).then(response => {
+        }, response => {
+        });
       },
-      onLocComplete () {
-        // TODO 获取当前位置并保存起来
+      delCloudData () {
+        let data = {
+          key: '8d0abd06ff69ef516a7f9b4f1b01ee5d',
+          tableid: '59b9e4742376c11dabff9f76',
+          ids: '8,9'
+        };
+        this.$http.post('http://yuntuapi.amap.com/datamanage/data/delete', data).then(response => {
+        }, response => {
+        });
       },
-      onLocError () {
+      updateCloudData () {
+        let data = {
+          key: '8d0abd06ff69ef516a7f9b4f1b01ee5d',
+          tableid: '59b9e4742376c11dabff9f76',
+          /* eslint-disable */
+          data: {"_id": "5"}
+        };
+        this.$http.post('http://yuntuapi.amap.com/datamanage/data/update', data).then(response => {
+        }, response => {
+        });
       }
     }
   };
@@ -87,13 +120,12 @@
     height: 100%;
   }
 
-  .setCenter {
+  .controlWrap {
     position: absolute;
     top: 20%;
     left: 50px;
     width: 100px;
     height: 100px;
     background-color: #a52863;
-    line-height: 100px;
   }
 </style>
