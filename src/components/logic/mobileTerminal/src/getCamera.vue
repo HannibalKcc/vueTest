@@ -1,7 +1,7 @@
 <template>
-  <div class="getPhoto">
+  <div class="getCamera">
     <h3>描述：移动端调用摄像头</h3>
-    <input type="file" capture="camera" accept="image/*" id="filetest" name="filetest">
+    <input type="file" capture="camera" accept="image/*" ref="cameraInp">
   </div>
 </template>
 
