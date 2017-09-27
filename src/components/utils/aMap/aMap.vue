@@ -4,8 +4,8 @@
     <div id="container" tabindex="0"></div>
     <div class="controlWrap">
       <div class="addCloudData" @click="addCloudData">向后台添加数据</div>
-      <div class="addCloudData" @click="delCloudData">向后台删除数据</div>
-      <div class="addCloudData" @click="updateCloudData">向后台更新数据</div>
+      <div class="elCloudData" @click="delCloudData">向后台删除数据</div>
+      <div class="updateCloudData" @click="updateCloudData">向后台更新数据</div>
     </div>
   </div>
 </template>
@@ -73,7 +73,7 @@
           tableid: '59b9e4742376c11dabff9f76',
           loctype: 2,
           /* eslint-disable */
-          // 双引号与stringify必不可少（历史遗留问题）
+          // 双引号(json格式必须)与stringify必不可少（历史遗留问题）
           data: JSON.stringify({
             "_name": "apiTest",
             "_address": "北京市朝阳区望京阜通东大街6号院3号楼"
@@ -125,7 +125,6 @@
     top: 20%;
     left: 50px;
     width: 100px;
-    height: 100px;
     background-color: #a52863;
   }
 </style>

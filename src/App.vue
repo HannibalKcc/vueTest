@@ -31,6 +31,7 @@
           {to: '/transition', inf: 'vue-transition'},
           {to: '/propSolt', inf: 'vue-prop-slot'},
           {to: '/resource', inf: 'vue-Resource'},
+          {to: '/vueRouter', inf: 'vue-router'},
           {to: '/tree', inf: 'vue- 递归组件与树形图'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
