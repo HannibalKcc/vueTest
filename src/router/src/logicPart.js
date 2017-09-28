@@ -13,7 +13,7 @@ import This from '../../components/logic/this.vue';
 import CondenseImg from '../../components/logic/condenseImg.vue';
 import RegExp from '../../components/logic/regExp.vue';
 import MVVM from '../../components/logic/MVVM/MVVM.vue';
-import GetCamera from '../../components/logic/mobileTerminal/src/getCamera.vue';
+import GetCamera from '../../components/logic/input.vue';
 import NavigatorAPI from '../../components/logic/navigatorAPI.vue';
 
 export default [

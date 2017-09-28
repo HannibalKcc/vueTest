@@ -42,7 +42,7 @@
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
           {to: '/mobile1px', inf: 'logic- 移动端1px问题'},
-          {to: '/getCamera', inf: 'logic-调用摄像头'},
+          {to: '/getCamera', inf: 'logic- input的各种用法'},
           {to: '/iife', inf: 'logic- 立即执行函数'},
           {to: '/svg', inf: 'logic- svg'},
           {to: '/this', inf: 'logic- this问题'},
@@ -51,9 +51,9 @@
           {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
           {to: '/navigatorAPI', inf: 'logic- navigator'},
           // 工具
-          {to: '/fullPage', inf: 'utils-fullPage'},
-          {to: '/mintUI', inf: 'utils-mintUI'},
-          {to: '/aMap', inf: 'utils-高德地图'},
+          {to: '/fullPage', inf: 'utils- fullPage'},
+          {to: '/mintUI', inf: 'utils- mintUI'},
+          {to: '/aMap', inf: 'utils- 高德地图'},
           {to: '/veeValidate', inf: 'veeValidate表单验证'},
           {to: '/wx', inf: '微信'}
         ]
@@ -71,7 +71,6 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
 
   }
@@ -88,6 +87,7 @@
   .routerBox {
     flex: 0 0 200px;
     border-right: 3px solid #404040;
+    margin-right: 20px;
     text-align: left;
     .router {
       margin: 10px 5px;
