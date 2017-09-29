@@ -1,9 +1,21 @@
 <template>
   <div class="vueRouter">
-    <h3>描述：二级路由</h3>
-    <router-link to="/a">跳转到二级路由a</router-link>
-    <router-link to="/b">跳转到二级路由b</router-link>
-    <router-view></router-view>
+    <h2>vueRouter实践</h2>
+    <div class="box1">
+      <h3>二级路由</h3>
+      <router-link to="/vueRouter/a">跳转到二级路由a</router-link>
+      <router-link to="/vueRouter/b">跳转到二级路由b</router-link>
+      <router-link to="/vueRouter/c">跳转到二级路由c</router-link>
+      <router-view></router-view>
+    </div>
+    <div class="box2">
+      <h3>路由钩子（导航拦截器）</h3>
+      <p>全局钩子与局部钩子</p>
+    </div>
+    <div class="box3">
+      <h3>路由元信息meta</h3>
+      <p>配合路由钩子可以用来识别用户是否登录</p>
+    </div>
   </div>
 </template>
 

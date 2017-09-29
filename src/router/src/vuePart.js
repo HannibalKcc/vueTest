@@ -6,6 +6,7 @@ import Tree from '../../components/vueSelf/tree/tree.vue';
 import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
 import SecondRuterA from '../../components/vueSelf/vue-router/src/a.vue';
 import SecondRuterB from '../../components/vueSelf/vue-router/src/b.vue';
+import SecondRuterC from '../../components/vueSelf/vue-router/src/c.vue';
 import Hello from '../../components/Hello.vue';
 export default [
   {
@@ -30,12 +31,22 @@ export default [
     // 二级路由，配置children
     children: [
       {
-        path: '/a',
+        path: 'a',  // 不要写/a因为那代表了根目录下的a标签
         component: SecondRuterA
       },
       {
-        path: '/b',
-        component: SecondRuterB
+        path: 'b',
+        component: SecondRuterB,
+        meta: {needStorage: true}
+      },
+      {
+        path: 'c',
+        component: SecondRuterC
+        // TODO 待改进
+        // beforeRouteLeave (to, from, next) {
+        //   console.log(this);
+        //   if (this.allowLeave === false) next(false);  // 不合条件就拒绝跳转
+        // }
       }
     ]
   },
