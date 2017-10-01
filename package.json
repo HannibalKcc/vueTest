@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "ejs": "^2.5.7",
+    "element-ui": "^1.4.6",
     "express": "^4.15.4",
     "fullpage.js": "^2.9.4",
     "less": "^2.7.2",

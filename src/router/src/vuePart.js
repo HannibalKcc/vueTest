@@ -41,12 +41,12 @@ export default [
       },
       {
         path: 'c',
-        component: SecondRuterC
-        // TODO 待改进
-        // beforeRouteLeave (to, from, next) {
-        //   console.log(this);
-        //   if (this.allowLeave === false) next(false);  // 不合条件就拒绝跳转
-        // }
+        component: SecondRuterC,
+        // 制定路由的导航钩子
+        beforeEnter: (to, from, next) => {
+          console.log('这是二级理由独享的导航钩子');
+          next(); // 不能不写
+        }
       }
     ]
   },
