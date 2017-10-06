@@ -6,6 +6,7 @@
       <router-link to="/vueRouter/a">跳转到二级路由a</router-link>
       <router-link to="/vueRouter/b">跳转到二级路由b</router-link>
       <router-link to="/vueRouter/c">跳转到二级路由c</router-link>
+      <router-link to="/vueRouter/d">跳转到二级路由d</router-link>
       <router-view></router-view>
     </div>
     <div class="box2">

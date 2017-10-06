@@ -9,11 +9,12 @@ function resolve(dir) {
 
 module.exports = {
   entry: {
+    // 入口文件，可以设置多个
     app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
+    filename: '[name].js',  // 出口文件，打包后会生成app.bundle.js
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath

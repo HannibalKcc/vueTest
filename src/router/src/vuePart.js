@@ -4,9 +4,10 @@ import PropSolt from '../../components/vueSelf/props/slotFather.vue';
 import Resource from '../../components/vueSelf/resource.vue';
 import Tree from '../../components/vueSelf/tree/tree.vue';
 import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
-import SecondRuterA from '../../components/vueSelf/vue-router/src/a.vue';
-import SecondRuterB from '../../components/vueSelf/vue-router/src/b.vue';
-import SecondRuterC from '../../components/vueSelf/vue-router/src/c.vue';
+import SecondRouterA from '../../components/vueSelf/vue-router/src/a.vue';
+import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
+import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
+const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue');  // 异步组件
 import Hello from '../../components/Hello.vue';
 export default [
   {
@@ -32,21 +33,25 @@ export default [
     children: [
       {
         path: 'a',  // 不要写/a因为那代表了根目录下的a标签
-        component: SecondRuterA
+        component: SecondRouterA
       },
       {
         path: 'b',
-        component: SecondRuterB,
+        component: SecondRouterB,
         meta: {needStorage: true}
       },
       {
         path: 'c',
-        component: SecondRuterC,
+        component: SecondRouterC,
         // 制定路由的导航钩子
         beforeEnter: (to, from, next) => {
           console.log('这是二级理由独享的导航钩子');
           next(); // 不能不写
         }
+      },
+      {
+        path: 'd',
+        component: SecondRouterD  //  异步组件引入
       }
     ]
   },
