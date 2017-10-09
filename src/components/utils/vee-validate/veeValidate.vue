@@ -60,7 +60,7 @@
       check () {
         // 验证所有表单
         this.$validator.validateAll().then((result) => {
-          if (result) {
+          if (result) { // result = true | false
             return;
           }
         });
