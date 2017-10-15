@@ -28,11 +28,12 @@
       return {
         routers: [
           // vue部分
-          {to: '/transition', inf: 'vue-transition'},
-          {to: '/propSolt', inf: 'vue-prop-slot'},
+          {to: '/transition', inf: 'vue-transition组件'},
+          {to: '/propSolt', inf: 'vue-slot'},
           {to: '/resource', inf: 'vue-Resource'},
           {to: '/vueRouter', inf: 'vue-router'},
-          {to: '/tree', inf: 'vue- 递归组件与树形图'},
+          {to: '/tree', inf: 'vue-递归组件与树形图'},
+          {to: '/key', inf: 'vue-key'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},

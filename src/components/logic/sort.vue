@@ -40,7 +40,7 @@
     },
     methods: {
       shuffle () {
-        this.arr = _.shuffle(this.arr);
+        this.arr = _.shuffle(this.arr); // shuffle是一个非异变方法
         Toast({message: 'shuffled!'});
       },
       getQuicksort () {

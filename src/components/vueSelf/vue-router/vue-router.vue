@@ -3,6 +3,7 @@
     <h2>vueRouter实践</h2>
     <div class="box1">
       <h3>二级路由</h3>
+      <!--为了在任何路由下准确地跳转，to应该写绝对路径-->
       <router-link to="/vueRouter/a">跳转到二级路由a</router-link>
       <router-link to="/vueRouter/b">跳转到二级路由b</router-link>
       <router-link to="/vueRouter/c">跳转到二级路由c</router-link>

@@ -8,7 +8,9 @@ import SecondRouterA from '../../components/vueSelf/vue-router/src/a.vue';
 import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
 import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
 const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue');  // 异步组件
+import Key from '../../components/vueSelf/key.vue';
 import Hello from '../../components/Hello.vue';
+
 export default [
   {
     path: '/transition',
@@ -54,6 +56,10 @@ export default [
         component: SecondRouterD  //  异步组件引入
       }
     ]
+  },
+  {
+    path: '/key',
+    component: Key
   },
   {
     path: '/hello',
