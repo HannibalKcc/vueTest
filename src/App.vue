@@ -51,6 +51,7 @@
           {to: '/regExp', inf: 'logic- 正则表达式的各种验证'},
           {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
           {to: '/navigatorAPI', inf: 'logic- navigator'},
+          {to: '/Generator', inf: 'logic- es6-Generator'},
           // 工具
           {to: '/fullPage', inf: 'utils- fullPage'},
           {to: '/mintUI', inf: 'utils- mintUI'},
