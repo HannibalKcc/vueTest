@@ -70,7 +70,7 @@
     width: 100%;
     height: 100%;
     padding: 60px 10px 0;
-    font-family: 'Microsoft YaHei UI', Arial;
+    font-family: 'Microsoft YaHei', Arial;
     -webkit-font-smoothing: antialiased; // 字体抗锯齿
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
