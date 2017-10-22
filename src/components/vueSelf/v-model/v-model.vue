@@ -1,23 +1,43 @@
 <template>
   <div class="v-model">
-    <h3>描述：在自定义组件里面使用v-model</h3>
-    <pre>
+    <h2>v-model</h2>
+    <h3>在自定义含input组件里面使用v-model</h3>
+    <p>
       v-model实际上只是一个语法糖，
       它相当于v-bind:value="something"与v-on:input="something = $event.target.value"
-    </pre>
-    <my-com v-model="test"></my-com>
-    <span>展示{{test}}</span>
+    </p>
+    <div class="demoBlock">
+      <my-com v-model="test"></my-com>
+      <span>{{test}}</span>
+    </div>
+
+    <p>
+      知道v-model只是一个语法糖后，便可以知道v-model并不局限与input的值。<br>
+      通过watch及时地$emit值（对象、数组、任何玩意）,v-model可以轻松地实现双向绑定
+    </p>
+    <p>
+      多个input通过v-model改变父组件的值
+    </p>
+    <input3 @change="changeValue" v-model="test2"></input3>
+    <p>{{test2}}</p>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import myCom from './src/myCom.vue';
+  import input3 from './src/input3.vue';
   export default {
-    components: {myCom},
+    components: {myCom, input3},
     data () {
       return {
-        test: '初始文本'
+        test: '初始文本',
+        test2: [{tit: 11}, {tit: 22}]
       };
+    },
+    methods: {
+      changeValue (txt) {
+        this.test2 = txt;
+      }
     }
   };
 </script>

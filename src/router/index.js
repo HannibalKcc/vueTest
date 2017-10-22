@@ -7,7 +7,6 @@ import logicPart from './src/logicPart.js';
 import utilsPart from './src/utilsPart.js';
 
 const routes = [...vuePart, ...logicPart, ...utilsPart];
-
 const router = new VueRouter({
   routes
 });

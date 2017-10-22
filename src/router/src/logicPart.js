@@ -16,6 +16,7 @@ import MVVM from '../../components/logic/MVVM/MVVM.vue';
 import GetCamera from '../../components/logic/input.vue';
 import NavigatorAPI from '../../components/logic/navigatorAPI.vue';
 import Generator from '../../components/logic/generator.vue';
+import Promise from '../../components/logic/promise.vue';
 
 export default [
   {
@@ -85,5 +86,9 @@ export default [
   {
     path: '/generator',
     component: Generator
+  },
+  {
+    path: '/promise',
+    component: Promise
   }
 ];

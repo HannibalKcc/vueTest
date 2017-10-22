@@ -9,6 +9,7 @@ import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
 import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
 const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue');  // 异步组件
 import Key from '../../components/vueSelf/key.vue';
+import VModel from '../../components/vueSelf/v-model/v-model.vue';
 import Hello from '../../components/Hello.vue';
 
 export default [
@@ -60,6 +61,10 @@ export default [
   {
     path: '/key',
     component: Key
+  },
+  {
+    path: '/vModel',
+    component: VModel
   },
   {
     path: '/hello',

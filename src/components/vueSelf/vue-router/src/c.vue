@@ -14,11 +14,11 @@
     },
     beforeRouteLeave (to, from, next) {
       console.log(this);
-      if (this.allowLeave === false) {
-        this.$notify.error({
-          title: '错误',
-          message: '不点赞不许走！'
-        });
+        if (this.allowLeave === false) {
+          this.$notify.error({
+            title: '错误',
+            message: '不点赞不许走！'
+          });
         next(false);  // 不合条件就拒绝跳转
       } else {
         this.$notify.success({

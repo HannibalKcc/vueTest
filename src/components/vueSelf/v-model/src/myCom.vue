@@ -1,6 +1,6 @@
 <template>
   <div class="myCom">
-    <span>个人组件实现v-model绑定</span>
+    <span>子组件文本与子组件input</span>
     <input type="text" :value="value" @input="updateValue($event.target.value)">
   </div>
 </template>
