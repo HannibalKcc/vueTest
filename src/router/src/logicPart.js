@@ -1,7 +1,7 @@
 // 逻辑
 import Sort from '../../components/logic/sort.vue';
 import ForLoop from '../../components/logic/forLoop.vue';
-import IE from '../../components/logic/import&export.vue';
+const Import = () => import('../../components/logic/import&export/import&export.vue');
 import Object from '../../components/logic/object.vue';
 import TouchPenetration from '../../components/logic/touchPenetration.vue';
 import CurrentTarget from '../../components/logic/currentTarget.vue';
@@ -29,7 +29,7 @@ export default [
   },
   {
     path: '/import-export',
-    component: IE
+    component: Import
   },
   {
     path: '/object',

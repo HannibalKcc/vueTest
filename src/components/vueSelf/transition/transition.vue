@@ -1,6 +1,6 @@
 <template>
   <div class="transition">
-    <h3>描述：使用vue中的transition组件</h3>
+    <h2>使用vue中的transition组件</h2>
     <button @click="show = !show">
       Toggle
     </button>
@@ -19,7 +19,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import comVelocity from './comVelocity.vue';
+  import comVelocity from './src/comVelocity.vue';
   export default {
     components: {
       comVelocity

@@ -1,17 +1,19 @@
 <template>
   <div class="comVelocity">
-    <h3>描述：使用velocity搭配钩子完成复杂动画</h3>
-    <input type="text" placeholder="输入X坐标" v-model="posX">
-    <input type="text" placeholder="输入Y坐标" v-model="posY">
-    <button class="btn" @click="go" ref="btn">start para</button>
-    <transition name="para"
-                @before-enter="beforeEnter"
-                @enter="enter"
-                @after-enter="afterEnter"
-    >
-      <!--如果使用v-show需要自行初始化-->
-      <div v-if="show" class="ball"></div>
-    </transition>
+    <h2>JS控制动画</h2>
+    <p>使用velocity搭配钩子完成复杂动画</p>
+    <div class="demoBlock">
+      <input type="text" placeholder="输入X坐标" v-model="posX">
+      <input type="text" placeholder="输入Y坐标" v-model="posY">
+      <button class="btn" @click="go" ref="btn">start para</button>
+      <transition name="para"
+                  @before-enter="beforeEnter"
+                  @enter="enter"
+                  @after-enter="afterEnter">
+        <!--如果使用v-show需要自行初始化-->
+        <div v-if="show" class="ball"></div>
+      </transition>
+    </div>
   </div>
 </template>
 
