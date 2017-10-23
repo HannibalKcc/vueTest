@@ -35,6 +35,7 @@
           {to: '/tree', inf: 'vue-递归组件与树形图'},
           {to: '/key', inf: 'vue-key'},
           {to: '/vModel', inf: 'vue-v-model'},
+          {to: '/sync', inf: 'vue-sync修饰符'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},

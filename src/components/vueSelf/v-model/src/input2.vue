@@ -1,5 +1,5 @@
 <template>
-  <div class="input3">
+  <div class="input2">
     <input v-model="value[0].tit"/>
     <input v-model="value[1].tit"/>
   </div>
