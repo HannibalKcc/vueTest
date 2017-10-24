@@ -14,6 +14,7 @@ import 'vue-fullpage/vue-fullpage.css';
 import VueFullpage from 'vue-fullpage';
 // './components/utils/vee-validate'路径也是可行的，因为当路径为目录时，import、require会依次寻找目录下的package.jsonv、index.js、index.json、index.node
 import './components/utils/vee-validate/index.js';  // 表单验证
+import myGlobal from './components/vueSelf/global/src/globalPlugin.js'; // 全局函数
 
 Vue.config.productionTip = false;
 
@@ -22,6 +23,7 @@ Vue.config.productionTip = false;
 Vue.use(Mint);
 Vue.use(ElementUI);
 Vue.use(VueFullpage);
+Vue.use(myGlobal);
 
 /* eslint-disable */
 const app = new Vue({

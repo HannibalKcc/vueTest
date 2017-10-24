@@ -36,6 +36,7 @@
           {to: '/key', inf: 'vue-key'},
           {to: '/vModel', inf: 'vue-v-model'},
           {to: '/sync', inf: 'vue-sync修饰符'},
+          {to: '/global', inf: 'vue-全局变量、函数'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},
