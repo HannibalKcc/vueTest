@@ -1,8 +1,7 @@
 <template>
-  <div class="slotSon">
-    <!--虽然具名，但顺序由分发者决定-->
+  <div class="sonName">
     <slot name="some1"></slot>
-    <span>子内容</span>
+    <div>子内容</div>
     <!--匿名组件相互匹配-->
     <slot>匿名槽默认值</slot>
     <slot name="some2"></slot>

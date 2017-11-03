@@ -3,4 +3,7 @@ exports.install = (Vue, option) => {
   Vue.prototype.globalFun1 = () => {
     alert('hello world');
   };
+  Vue.prototype.log = (val) => {
+    console.log(val);
+  };
 };

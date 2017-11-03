@@ -1,6 +1,6 @@
 // vue部分
 import Transition from '../../components/vueSelf/transition/transition.vue';
-import PropSolt from '../../components/vueSelf/props/slotFather.vue';
+import PropSlot from '../../components/vueSelf/slot/slot.vue';
 import Resource from '../../components/vueSelf/resource.vue';
 import Tree from '../../components/vueSelf/tree/tree.vue';
 import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
@@ -20,8 +20,8 @@ export default [
     component: Transition
   },
   {
-    path: '/propSolt',
-    component: PropSolt
+    path: '/propSlot',
+    component: PropSlot
   },
   {
     path: '/resource',

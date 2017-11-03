@@ -29,7 +29,7 @@
         routers: [
           // vue部分
           {to: '/transition', inf: 'vue-transition组件'},
-          {to: '/propSolt', inf: 'vue-slot'},
+          {to: '/propSlot', inf: 'vue-slot'},
           {to: '/resource', inf: 'vue-Resource'},
           {to: '/vueRouter', inf: 'vue-router'},
           {to: '/tree', inf: 'vue-递归组件与树形图'},
