@@ -19,8 +19,8 @@
     <h3>子组件多个input下的v-model处理</h3>
     <p>多个input可以通过v-model来双向绑定父组件的值</p>
     <div class="demoBlock">
-      <input2 @change="changeValue" v-model="test2"></input2>
-      <input v-model="test2">
+      <input2 @change="changeValue" v-model="test2" ></input2>
+      <input v-model="test2" >
     </div>
 
     <h3>number修饰符</h3>

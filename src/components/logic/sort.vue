@@ -1,5 +1,5 @@
 <template>
-  <div class="quicksort">
+  <div class="sort">
     <input type="text" v-model="arr" style="width: 20em;">
     <br>
     <button @click="shuffle">shuffle</button>
