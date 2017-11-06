@@ -1,6 +1,6 @@
 // vue部分
 import Transition from '../../components/vueSelf/transition/transition.vue';
-import PropSolt from '../../components/vueSelf/props/slotFather.vue';
+import PropSlot from '../../components/vueSelf/slot/slot.vue';
 import Resource from '../../components/vueSelf/resource.vue';
 import Tree from '../../components/vueSelf/tree/tree.vue';
 import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
@@ -10,7 +10,8 @@ import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
 const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue');  // 异步组件
 import Key from '../../components/vueSelf/key.vue';
 import VModel from '../../components/vueSelf/v-model/v-model.vue';
-import Sync from '../../components/sync/sync.vue';
+import Sync from '../../components/vueSelf/sync/sync.vue';
+import Global from '../../components/vueSelf/global/global.vue';
 import Hello from '../../components/Hello.vue';
 
 export default [
@@ -19,8 +20,8 @@ export default [
     component: Transition
   },
   {
-    path: '/propSolt',
-    component: PropSolt
+    path: '/propSlot',
+    component: PropSlot
   },
   {
     path: '/resource',
@@ -70,6 +71,10 @@ export default [
   {
     path: '/sync',
     component: Sync
+  },
+  {
+    path: '/global',
+    component: Global
   },
   {
     path: '/hello',

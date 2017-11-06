@@ -17,6 +17,7 @@ import GetCamera from '../../components/logic/input.vue';
 import NavigatorAPI from '../../components/logic/navigatorAPI.vue';
 import Generator from '../../components/logic/generator.vue';
 import Promise from '../../components/logic/promise.vue';
+import Notification from '../../components/logic/notification.vue';
 
 export default [
   {
@@ -90,5 +91,9 @@ export default [
   {
     path: '/promise',
     component: Promise
+  },
+  {
+    path: '/notification',
+    component: Notification
   }
 ];

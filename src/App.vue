@@ -29,13 +29,14 @@
         routers: [
           // vue部分
           {to: '/transition', inf: 'vue-transition组件'},
-          {to: '/propSolt', inf: 'vue-slot'},
+          {to: '/propSlot', inf: 'vue-slot'},
           {to: '/resource', inf: 'vue-Resource'},
           {to: '/vueRouter', inf: 'vue-router'},
           {to: '/tree', inf: 'vue-递归组件与树形图'},
           {to: '/key', inf: 'vue-key'},
           {to: '/vModel', inf: 'vue-v-model'},
           {to: '/sync', inf: 'vue-sync修饰符'},
+          {to: '/global', inf: 'vue-全局变量、函数'},
           // 逻辑
           {to: '/sort', inf: 'logic-排序'},
           {to: '/forLoop', inf: 'logic-es6 循环'},
@@ -55,6 +56,7 @@
           {to: '/navigatorAPI', inf: 'logic- navigator'},
           {to: '/generator', inf: 'logic- es6-Generator'},
           {to: '/promise', inf: 'logic- es6-Promise'},
+          {to: '/notification', inf: 'logic- H5特性notification'},
           // 工具
           {to: '/fullPage', inf: 'utils- fullPage'},
           {to: '/mintUI', inf: 'utils- mintUI'},
