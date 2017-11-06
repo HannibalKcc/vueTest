@@ -13,11 +13,11 @@
     </div>
 
     <h3>作用于插槽</h3>
-    <p>似乎出了点问题？</p>
+    <p></p>
     <div class="demoBlock">
       <son-scope>
         <template slot-scope="props">
-          <span>{{ props }}</span>
+          <span>{{ props.txt }}</span>
         </template>
       </son-scope>
     </div>

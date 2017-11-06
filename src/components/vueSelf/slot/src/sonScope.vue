@@ -1,6 +1,6 @@
 <template>
   <div class="sonScope">
-    <slot text="hello from child"></slot>
+    <slot :txt="txt"></slot>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     data () {
       return {
-        txt: '子组件'
+        txt: 'from子组件消息'
       };
     }
   };
