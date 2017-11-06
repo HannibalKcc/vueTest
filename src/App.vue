@@ -56,6 +56,7 @@
           {to: '/navigatorAPI', inf: 'logic- navigator'},
           {to: '/generator', inf: 'logic- es6-Generator'},
           {to: '/promise', inf: 'logic- es6-Promise'},
+          {to: '/notification', inf: 'logic- H5特性notification'},
           // 工具
           {to: '/fullPage', inf: 'utils- fullPage'},
           {to: '/mintUI', inf: 'utils- mintUI'},

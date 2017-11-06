@@ -1,6 +1,6 @@
 <template>
   <div class="sonScope">
-    <slot :txt="txt"></slot>
+    <slot text="hello from child"></slot>
   </div>
 </template>
 
