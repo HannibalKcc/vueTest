@@ -8,7 +8,13 @@ import utilsPart from './src/utilsPart.js';
 
 const routes = [...vuePart, ...logicPart, ...utilsPart];
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    // 可以获取window
+    // return 期望滚动的位置（number参数）
+    return {x: 0, y: 0};
+  }
 });
 
 // 全局路由的导航拦截器

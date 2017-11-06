@@ -97,7 +97,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       // Absolute path to compiled SPA
       path.join(__dirname, '../dist'),
       // List of routes to prerender
-      ['/', '/transition', '/propSolt', '/resource'],  // '/'为必填！
+      ['/tree'],  // '/'为必填！
       {
         // options https://github.com/chrisvfritz/prerender-spa-plugin
       }
