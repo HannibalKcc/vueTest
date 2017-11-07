@@ -25,6 +25,12 @@
       {{demo3Fun.next()}}
       <button @click="demo3Fun.next()">这次没有容器了</button>
     </div>
+
+    <h3>next参数</h3>
+    <p>next允许带一个参数，作为上一次yield的返回值</p>
+
+    <h3>搭配for...of</h3>
+    <p>一旦done属性为true，那么for...of就会终止，且不返回对象</p>
   </div>
 </template>
 

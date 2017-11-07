@@ -29,6 +29,13 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       // 可以让node替我们申请接口数据(仅限开发阶段)
+      '/api': {
+        target: 'http://101.132.32.16',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/api'
+        }
+      }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

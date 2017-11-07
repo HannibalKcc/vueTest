@@ -13,3 +13,4 @@ Vue.http.interceptors.push(function (req, next) {
     console.log('拦截res', res);
   });
 });
+
