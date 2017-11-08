@@ -29,11 +29,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       // 可以让node替我们申请接口数据(仅限开发阶段)
-      '/api': {
-        target: 'http://101.132.32.16',
+      '/v2': {
+        target: 'https://api.douban.com',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/api'
+          '^/v2': '/v2'
         }
       }
     },
