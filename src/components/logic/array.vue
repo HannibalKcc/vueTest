@@ -1,22 +1,34 @@
-<template>
+1·<template>
   <div class="array">
     <h2>数组的研究</h2>
     <h3>取数组中出现次数最多的元素（元素类型不定）</h3>
-    <span>实验数组——</span>
-    <input type="text" disabled style="width: 800px;" v-model="arr1">
-    <button @click="run1">计算</button>
-    <br>
-    <div>reduce()统计结果——{{resultReduce}}</div>
-    <div>出现最多的元素——{{maxObj1.key}}，次数：{{maxObj1.max}}</div>
-    <br>
-    <div>replace()统计结果——{{resultReplace}}</div>
-    <div>出现最多的元素——{{maxObj2.key}}，次数：{{maxObj2.max}}</div>
+    <div class="demoBlock">
+      <span>实验数组——</span>
+      <input type="text" disabled style="width: 800px;" v-model="arr1">
+      <button @click="run1">计算</button>
+      <br>
+      <div>reduce()统计结果——{{resultReduce}}</div>
+      <div>出现最多的元素——{{maxObj1.key}}，次数：{{maxObj1.max}}</div>
+      <br>
+      <div>replace()统计结果——{{resultReplace}}</div>
+      <div>出现最多的元素——{{maxObj2.key}}，次数：{{maxObj2.max}}</div>
+    </div>
 
-    <hr>
     <h3>描述：数组转成无逗号字符串</h3>
     <span>arr1.toString().replace(/,/g,'')——{{arr1.toString().replace(/,/g, '')}}</span>
     <h3>描述：String、Map、Set转化成为数组</h3>
     <span>Array.from()——{{}}</span>
+
+    <h3>利用sort()函数排序</h3>
+    <p>
+      注意！若是sort()不含参数，则按照字符编码排序。如：1，100,25,50,6 <br>
+      参数函数的返回值决定了排序方式，返回值小于、等于0不变，大于0则逆ab的顺序 <br>
+      利用这个函数可以轻松对对象数组排序
+    </p>
+    <div class="demoBlock">
+      {{sortArray}}
+      <button @click="sort">排序</button>
+    </div>
   </div>
 </template>
 
@@ -31,7 +43,8 @@
         resultReplace: {},
         maxObj1: {},
         maxObj2: {},
-        str1: 'String转化数组'
+        str1: 'String转化数组',
+        sortArray: [9, 60, 1, 3, 70, 3, 40, 0, -12]
       };
     },
     methods: {
@@ -82,6 +95,9 @@
           }
         });
         return res;
+      },
+      sort () {
+        this.sortArray.sort((a, b) => a - b);
       }
     }
   };
@@ -90,9 +106,5 @@
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   .array {
     text-align: left;
-  }
-
-  h3 {
-    text-align: center;
   }
 </style>

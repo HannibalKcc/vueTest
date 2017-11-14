@@ -10,7 +10,7 @@ import Mobile1px from '../../components/logic/mobileTerminal/src/border1px.vue';
 import IIFE from '../../components/logic/IIFE.vue';
 import SVG from '../../components/logic/svg.vue';
 import This from '../../components/logic/this.vue';
-import CondenseImg from '../../components/logic/condenseImg.vue';
+import CondenseImg from '../../components/logic/canvas.vue';
 import RegExp from '../../components/logic/regExp.vue';
 import MVVM from '../../components/logic/MVVM/MVVM.vue';
 import GetCamera from '../../components/logic/input.vue';
@@ -18,6 +18,7 @@ import NavigatorAPI from '../../components/logic/navigatorAPI.vue';
 import Generator from '../../components/logic/generator.vue';
 import Promise from '../../components/logic/promise.vue';
 import Notification from '../../components/logic/notification.vue';
+import RichText from '../../components/logic/richText.vue';
 
 export default [
   {
@@ -95,5 +96,9 @@ export default [
   {
     path: '/notification',
     component: Notification
+  },
+  {
+    path: '/richText',
+    component: RichText
   }
 ];
