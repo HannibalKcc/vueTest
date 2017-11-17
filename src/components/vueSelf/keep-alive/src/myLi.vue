@@ -1,7 +1,7 @@
 <template>
-  <div class="globalComponent">
-    <span>这里是全局组件，globalComponent你在任何地方都可以调用而不用import</span>
-  </div>
+  <li class="myLi">
+    在DOM模板中，直接调用会受到阻碍,应该使用is转换
+  </li>
 </template>
 
 <script type="text/ecmascript-6">

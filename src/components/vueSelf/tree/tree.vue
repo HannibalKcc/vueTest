@@ -1,6 +1,7 @@
 <template>
   <div class="tree">
     <h3>描述：用递归组件制作树形图</h3>
+    <p>利用了递归组件</p>
     <ul class="wrap">
       <tree-node v-for="(item, index) in treeList" :key="index" :nodeData="item"></tree-node>
     </ul>

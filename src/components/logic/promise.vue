@@ -38,6 +38,14 @@
     <p>
       Promise.all(...promise)用于把多个Promise实例封装成新的Promise实例<br>
     </p>
+
+    <h3>附录：测试预加载与ajax的关系</h3>
+    <p>
+      1，如果编译错误，那么打不了包（与预渲染prerender有关！正常打包并不检查错误）
+      1，{{moviesList[0].aka[0]}}
+      <br>
+      2，预渲染的运行环境是nodejs，所以比如Promise的语法必须有catch()等捕捉错误的方法，否则会报错。这点与浏览器环境有所不同
+    </p>
   </div>
 </template>
 

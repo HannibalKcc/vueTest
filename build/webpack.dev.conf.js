@@ -5,6 +5,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+// var BrowserSyncPlugin = require('browser-sync-webpack-plugin') 移动端调试神器，暂时不会用
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -31,5 +32,14 @@ module.exports = merge(baseWebpackConfig, {
       inject: true
     }),
     new FriendlyErrorsPlugin()
+    // new BrowserSyncPlugin({
+    //   host: 'localhost',
+    //   port: 9090,
+    //   files: '',
+    //   server: {
+    //     //指定服务器启动根目录
+    //     baseDir: './'
+    //   }
+    // })
   ]
 })
