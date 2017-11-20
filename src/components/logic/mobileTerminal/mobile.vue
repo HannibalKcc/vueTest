@@ -1,6 +1,6 @@
 <template>
   <div class="mobile">
-
+    <router-view></router-view>
   </div>
 </template>
 

@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import {Toast} from 'mint-ui';
 import vuePart from './src/vuePart.js';
-import logicPart from './src/logicPart.js';
+import logicPart from './src/logicPart/index.js';
 import utilsPart from './src/utilsPart.js';
 
 const routes = [...vuePart, ...logicPart, ...utilsPart];

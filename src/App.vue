@@ -46,7 +46,7 @@
           {to: '/touchPenetration', inf: 'logic- 移动端点击穿透'},
           {to: '/currentTarget', inf: 'logic- target&currentTarget'},
           {to: '/array', inf: 'logic- 数组问题'},
-          {to: '/mobile1px', inf: 'logic- 移动端1px问题'},
+          {to: '/mobileTerminal', inf: 'logic- 移动端'},
           {to: '/getCamera', inf: 'logic- input的各种用法'},
           {to: '/iife', inf: 'logic- 立即执行函数'},
           {to: '/svg', inf: 'logic- svg'},
