@@ -6,10 +6,34 @@ import vuePart from './src/vuePart.js';
 import logicPart from './src/logicPart/index.js';
 import utilsPart from './src/utilsPart.js';
 
-const routes = [...vuePart, ...logicPart, ...utilsPart];
+function copy (aObject) {
+  var bObject, v, k;
+  bObject = Array.isArray(aObject) ? [] : {};
+  for (k in aObject) {
+    v = aObject[k];
+    bObject[k] = (typeof v === 'object') ? copy(v) : v;
+  }
+  return bObject;
+}
+
+const routesRaw = [vuePart, logicPart, utilsPart];
+let tmp = copy(routesRaw);  // 由于内部有自定义函数，所以JSON的深度拷贝方法不可行
+let routesRes = [];
+(function machiningRoutes (t) {
+  if (Object.prototype.toString.call(t) === '[object Array]') {
+    t.forEach((val, index, arr) => {
+      machiningRoutes(val);
+    });
+  } else if (t.hasOwnProperty('farName')) {
+    machiningRoutes(t.classChild);
+  } else if (t.hasOwnProperty('path')) {
+    routesRes.push(t);
+  }
+})(tmp);
+
 const router = new VueRouter({
   mode: 'history',
-  routes,
+  routes: routesRes,
   scrollBehavior (to, from, savedPosition) {
     // 可以获取window
     // return 期望滚动的位置（number参数）
@@ -31,4 +55,5 @@ router.beforeEach((to, from, next) => {
 
 Vue.use(VueRouter);
 
-export default router;
+export default router; // 给main.js拿去挂载
+export {routesRaw}; // 给app.vue拿去路由跳转

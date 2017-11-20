@@ -21,82 +21,92 @@ import Promise from '../../../components/logic/promise.vue';
 import Notification from '../../../components/logic/notification.vue';
 import RichText from '../../../components/logic/richText.vue';
 
-export default [
-  MobileTerminal,
-  {
-    path: '/sort',
-    component: Sort
-  },
-  {
-    path: '/forLoop',
-    component: ForLoop
-  },
-  {
-    path: '/import-export',
-    component: ImportExport
-  },
-  {
-    path: '/object',
-    component: Object
-  },
-  {
-    path: '/touchPenetration',
-    component: TouchPenetration
-  },
-  {
-    path: '/currentTarget',
-    component: CurrentTarget
-  },
-  {
-    path: '/array',
-    component: Array
-  },
-  {
-    path: '/iife',
-    component: IIFE
-  },
-  {
-    path: '/svg',
-    component: SVG
-  },
-  {
-    path: '/this',
-    component: This
-  },
-  {
-    path: '/condenseImg',
-    component: CondenseImg
-  },
-  {
-    path: '/regExp',
-    component: RegExp
-  },
-  {
-    path: '/mvvm',
-    component: MVVM
-  },
-  {
-    path: '/getCamera',
-    component: GetCamera
-  },
-  {
-    path: '/navigatorAPI',
-    component: NavigatorAPI
-  },
-  {
-    path: '/generator',
-    component: Generator
-  },
-  {
-    path: '/promise',
-    component: Promise
-  },
-  {
-    path: '/notification',
-    component: Notification
-  },
-  {
-    path: '/richText',
-    component: RichText
-  }
-];
+export default {
+  farName: 'logicPart',
+  classChild: [
+    MobileTerminal,
+//   farName: 'mobileTerminal',
+//   classChild: [
+//    {
+//       path: 'mobileTerminalBorder1px',
+//       component: mobileTerminalBorder1px
+//    }
+//  ]
+    {
+      path: '/sort',
+      component: Sort
+    },
+    {
+      path: '/forLoop',
+      component: ForLoop
+    },
+    {
+      path: '/import-export',
+      component: ImportExport
+    },
+    {
+      path: '/object',
+      component: Object
+    },
+    {
+      path: '/touchPenetration',
+      component: TouchPenetration
+    },
+    {
+      path: '/currentTarget',
+      component: CurrentTarget
+    },
+    {
+      path: '/array',
+      component: Array
+    },
+    {
+      path: '/iife',
+      component: IIFE
+    },
+    {
+      path: '/svg',
+      component: SVG
+    },
+    {
+      path: '/this',
+      component: This
+    },
+    {
+      path: '/condenseImg',
+      component: CondenseImg
+    },
+    {
+      path: '/regExp',
+      component: RegExp
+    },
+    {
+      path: '/mvvm',
+      component: MVVM
+    },
+    {
+      path: '/getCamera',
+      component: GetCamera
+    },
+    {
+      path: '/navigatorAPI',
+      component: NavigatorAPI
+    },
+    {
+      path: '/generator',
+      component: Generator
+    },
+    {
+      path: '/promise',
+      component: Promise
+    },
+    {
+      path: '/notification',
+      component: Notification
+    },
+    {
+      path: '/richText',
+      component: RichText
+    }
+  ]
+};
