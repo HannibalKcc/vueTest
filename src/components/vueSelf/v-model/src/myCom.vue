@@ -1,6 +1,7 @@
 <template>
   <div class="myCom">
     <span>子组件文本与子组件input</span>
+    <!-- 如果使用v-model会报错（对象与数组不会） -->
     <input type="text" :value="value" @input="updateValue($event.target.value)">
   </div>
 </template>
