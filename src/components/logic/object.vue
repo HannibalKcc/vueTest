@@ -1,6 +1,7 @@
 <template>
   <div class="objectStudy">
-    <h3>描述：对象的深浅拷贝研究</h3>
+    <h2>对象</h2>
+    <h3>对象的深浅拷贝</h3>
     <p>
       浅拷贝与深拷贝都创建了新的对象，但是若原始值内还有对象，则会产生关联改变。深拷贝则无论如何也不会发生关联改变。
     </p>
@@ -13,13 +14,13 @@
     </ul>
     <br>
     <button @click="change">改变obj1的属性值</button>
-    <hr>
-    <h3>描述：对象的内容比较方法</h3>
+
+    <h3>对象的内容比较方法</h3>
     <span>JSON.stringify(NaN) === JSON.stringify(NaN)</span>
-    <hr>
-    <h3>描述：对象与[]</h3>
+
+    <h3>对象与[]</h3>
     <span>{{obj6}}</span>
-    <hr>
+
     <h3>描述：对象的深度合并</h3>
     <span>{{objMixin(mixinA, mixinB)}}</span>
   </div>

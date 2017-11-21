@@ -10,13 +10,16 @@
       <button @click="shuffle">重新排序元素</button>
       <span>{{list}}</span>
       <ul>
-        <li v-for="(item, index) in list" :key="item">
+        <li v-for="(item, index) in list" :key="index">
           {{item}}
           <input type="text" placeholder="随便输入点什么先">
           <div class="btn" @click="list.splice(index, 1);">X</div>
         </li>
       </ul>
     </div>
+
+    <h3>拒绝懒dom</h3>
+    <p>要解决上面demo所示的问题，正确的方式是给key绑定唯一识别符，而不是index</p>
   </div>
 </template>
 

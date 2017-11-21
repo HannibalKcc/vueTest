@@ -2,6 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!--打开DNS预读取-->
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+  <!--强制查询主机名，针对页面中没有出现的域进行预读取-->
+  <link rel="dns-prefetch" href="https://api.douban.com">
   <title>vue-test</title>
   <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript"

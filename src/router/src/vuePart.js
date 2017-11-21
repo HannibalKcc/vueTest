@@ -13,71 +13,79 @@ import VModel from '../../components/vueSelf/v-model/v-model.vue';
 import Sync from '../../components/vueSelf/sync/sync.vue';
 import Global from '../../components/vueSelf/global/global.vue';
 import Hello from '../../components/Hello.vue';
+import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
 
-export default [
-  {
-    path: '/transition',
-    component: Transition
-  },
-  {
-    path: '/propSlot',
-    component: PropSlot
-  },
-  {
-    path: '/resource',
-    component: Resource
-  },
-  {
-    path: '/tree',
-    component: Tree
-  },
-  {
-    path: '/vueRouter',
-    component: VueRouter,
-    // 二级路由，配置children
-    children: [
-      {
-        path: 'a',  // 不要写/a因为那代表了根目录下的a标签
-        component: SecondRouterA
-      },
-      {
-        path: 'b',
-        component: SecondRouterB,
-        meta: {needStorage: true}
-      },
-      {
-        path: 'c',
-        component: SecondRouterC,
-        // 制定路由的导航钩子
-        beforeEnter: (to, from, next) => {
-          console.log('这是二级理由独享的导航钩子');
-          next(); // 不能不写
+export default {
+  farName: 'vuePart',
+  classChild: [
+    {
+      path: '/transition',
+      component: Transition
+    },
+    {
+      path: '/propSlot',
+      component: PropSlot
+    },
+    {
+      path: '/resource',
+      component: Resource
+    },
+    {
+      path: '/tree',
+      component: Tree
+    },
+    {
+      path: '/vueRouter',
+      component: VueRouter,
+      // 二级路由，配置children
+      children: [
+        {
+          path: 'a',  // 不要写/a因为那代表了根目录下的a标签
+          component: SecondRouterA
+        },
+        {
+          path: 'b',
+          component: SecondRouterB,
+          meta: {needStorage: true}
+        },
+        {
+          path: 'c',
+          component: SecondRouterC,
+          // 制定路由的导航钩子
+          beforeEnter: (to, from, next) => {
+            console.log('这是二级理由独享的导航钩子');
+            next(); // 不能不写
+          }
+        },
+        {
+          path: 'd',
+          component: SecondRouterD  //  异步组件引入
         }
-      },
-      {
-        path: 'd',
-        component: SecondRouterD  //  异步组件引入
-      }
-    ]
-  },
-  {
-    path: '/key',
-    component: Key
-  },
-  {
-    path: '/vModel',
-    component: VModel
-  },
-  {
-    path: '/sync',
-    component: Sync
-  },
-  {
-    path: '/global',
-    component: Global
-  },
-  {
-    path: '/hello',
-    component: Hello
-  }
-];
+      ]
+    },
+    {
+      path: '/key',
+      component: Key
+    },
+    {
+      path: '/vModel',
+      component: VModel
+    },
+    {
+      path: '/sync',
+      component: Sync
+    },
+    {
+      path: '/global',
+      component: Global
+    },
+    {
+      path: '/hello',
+      component: Hello
+    },
+    {
+      path: '/keepAlive',
+      component: KeepAlive
+    }
+  ]
+};
