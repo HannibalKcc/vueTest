@@ -10,22 +10,28 @@
         </li>
       </ul>
       <div class="viewBox">
-        <router-view></router-view>
+        <tree-far v-for="(item, index) in routersList" :key="index"
+                  :nodeData="item"></tree-far>
+        <router-view/>
       </div>
     </div>
+
     <flotage-qr-code></flotage-qr-code>
   </div>
 </template>
 
 <script>
+  import {routesRaw} from './router/index.js';
+
   import flotageQrCode from './components/others/flotageQrCode.vue';
+  import treeFar from './components/others/treeNode.vue';
+
   export default {
     name: 'app',
-    components: {
-      flotageQrCode
-    },
+    components: {flotageQrCode, treeFar},
     data () {
       return {
+        routersList: routesRaw,
         routers: [
           // vue部分
           {to: '/transition', inf: 'vue-transition组件'},

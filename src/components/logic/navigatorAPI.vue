@@ -14,7 +14,7 @@
       this.userAgent = navigator.userAgent;
       this.appVersion = navigator.appVersion;
       window.addEventListener('scroll', () => {
-        console.log(123);
+        console.log('scroll!');
       });
     },
     data () {

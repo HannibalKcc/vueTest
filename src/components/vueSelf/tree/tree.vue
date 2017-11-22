@@ -10,6 +10,7 @@
 
 <script type="text/ecmascript-6">
   import treeNode from './src/treeNode.vue';
+
   export default {
     components: {treeNode},
     data () {

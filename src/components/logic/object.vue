@@ -11,6 +11,20 @@
       <li>obj3:{{obj3}} <span class="keyWords">Object.assign({}, this.obj1)</span></li>
       <li>obj4:{{obj4}} <span class="keyWords">{...this.obj1}</span></li>
       <li>obj5:{{obj5}} <span class="keyWords">JSON.parse(JSON.stringify(this.obj1))</span></li>
+      <li>
+        <pre>
+          更进一步的深度拷贝（针对函数）
+          function copy (aObject) {
+            var bObject, v, k;
+            bObject = Array.isArray(aObject) ? [] : {};
+            for (k in aObject) { // 无法遍历出不可枚举属性
+            v = aObject[k];
+            bObject[k] = (typeof v === 'object') ? copy(v) : v;
+            }
+            return bObject;
+          }
+          </pre>
+      </li>
     </ul>
     <br>
     <button @click="change">改变obj1的属性值</button>

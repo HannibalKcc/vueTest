@@ -20,11 +20,13 @@ export default {
   classChild: [
     {
       path: '/transition',
-      component: Transition
+      component: Transition,
+      info: 'transition组件'
     },
     {
       path: '/propSlot',
-      component: PropSlot
+      component: PropSlot,
+      info: 'solt槽'
     },
     {
       path: '/resource',
