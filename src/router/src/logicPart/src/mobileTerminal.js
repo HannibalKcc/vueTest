@@ -5,7 +5,8 @@ export default {
   classChild: [
     {
       path: 'mobileTerminalBorder1px',
-      component: mobileTerminalBorder1px
+      component: mobileTerminalBorder1px,
+      info: '1像素边框问题'
     }
   ]
 };

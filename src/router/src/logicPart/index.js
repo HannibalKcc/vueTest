@@ -34,79 +34,98 @@ export default {
 //  ]
     {
       path: '/sort',
-      component: Sort
+      component: Sort,
+      info: '排序'
     },
     {
       path: '/forLoop',
-      component: ForLoop
+      component: ForLoop,
+      info: 'JS中的循环'
     },
     {
       path: '/import-export',
-      component: ImportExport
+      component: ImportExport,
+      info: 'es6-模块'
     },
     {
       path: '/object',
-      component: Object
+      component: Object,
+      info: 'JS对象'
     },
     {
       path: '/touchPenetration',
-      component: TouchPenetration
+      component: TouchPenetration,
+      info: '???'
     },
     {
       path: '/currentTarget',
-      component: CurrentTarget
+      component: CurrentTarget,
+      info: '事件委托、currentTarget'
     },
     {
       path: '/array',
-      component: Array
+      component: Array,
+      info: 'JS数组'
     },
     {
       path: '/iife',
-      component: IIFE
+      component: IIFE,
+      info: 'JS立即执行函数'
     },
     {
       path: '/svg',
-      component: SVG
+      component: SVG,
+      info: 'SVG'
     },
     {
       path: '/this',
-      component: This
+      component: This,
+      info: 'JSThis'
     },
     {
       path: '/condenseImg',
-      component: CondenseImg
+      component: CondenseImg,
+      info: 'canvas压缩图片'
     },
     {
       path: '/regExp',
-      component: RegExp
+      component: RegExp,
+      info: '正则表达式'
     },
     {
       path: '/mvvm',
-      component: MVVM
+      component: MVVM,
+      info: 'MVVM'
     },
     {
       path: '/getCamera',
-      component: GetCamera
+      component: GetCamera,
+      info: '获取拍照'
     },
     {
       path: '/navigatorAPI',
-      component: NavigatorAPI
+      component: NavigatorAPI,
+      info: 'API navigator'
     },
     {
       path: '/generator',
-      component: Generator
+      component: Generator,
+      info: 'es6 Generator'
     },
     {
       path: '/promise',
-      component: Promise
+      component: Promise,
+      info: 'es6 Promise'
     },
     {
       path: '/notification',
-      component: Notification
+      component: Notification,
+      info: 'H5 Notification弹窗特性'
     },
     {
       path: '/richText',
-      component: RichText
+      component: RichText,
+      info: '富文本编辑器'
     }
   ]
 };

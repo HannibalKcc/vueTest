@@ -11,19 +11,23 @@ export default {
     mintUi,
     {
       path: '/fullPage',
-      component: FullPage
+      component: FullPage,
+      info: '一屏一层'
     },
     {
       path: '/aMap',
-      component: AMap
+      component: AMap,
+      info: '高德地图'
     },
     {
       path: '/veeValidate',
-      component: VeeValidate
+      component: VeeValidate,
+      info: '表单验证'
     },
     {
       path: '/wx',
-      component: WX
+      component: WX,
+      info: '微信'
     }
   ]
 };

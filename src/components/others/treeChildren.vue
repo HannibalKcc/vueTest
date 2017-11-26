@@ -1,6 +1,7 @@
 <template>
   <ul class="treeChildren wrap">
-    <tree-node v-for="(item, index) in childrenList" :key="index" :nodeData="item"></tree-node>
+    <tree-node v-for="(item, index) in childrenList" :key="index" :nodeData="item"
+               @click.native="$router.push(item.path)"></tree-node>
   </ul>
 </template>
 
@@ -23,5 +24,6 @@
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   .wrap {
     padding-left: 30px;
+    cursor: pointer;
   }
 </style>

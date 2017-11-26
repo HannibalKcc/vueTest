@@ -30,15 +30,18 @@ export default {
     },
     {
       path: '/resource',
-      component: Resource
+      component: Resource,
+      info: 'vue-resource'
     },
     {
       path: '/tree',
-      component: Tree
+      component: Tree,
+      info: '递归组件'
     },
     {
       path: '/vueRouter',
       component: VueRouter,
+      info: 'vue-router',
       // 二级路由，配置children
       children: [
         {
@@ -67,27 +70,32 @@ export default {
     },
     {
       path: '/key',
-      component: Key
+      component: Key,
+      info: '属性key'
     },
     {
       path: '/vModel',
-      component: VModel
+      component: VModel,
+      info: '属性vmodel'
     },
     {
       path: '/sync',
-      component: Sync
+      component: Sync,
+      info: '修饰符sync'
     },
     {
       path: '/global',
-      component: Global
+      component: Global,
+      info: '全局变量、函数'
     },
-    {
-      path: '/hello',
-      component: Hello
-    },
+    // {
+    //   path: '/hello',
+    //   component: Hello
+    // },
     {
       path: '/keepAlive',
-      component: KeepAlive
+      component: KeepAlive,
+      info: '组件keep-alive'
     }
   ]
 };
