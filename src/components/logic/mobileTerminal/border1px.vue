@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile1px">
+  <div class="border1px">
     <div class="content">
       <h3>描述：没有设置meta，请在移动端放大观察。</h3>
       <div class="box1">不处理的1px</div>
@@ -18,7 +18,7 @@
     .border-1px {
       color: #932;
       &::after {
-        transform: scaleY(.5);  // 使用淘宝rem后，处理不处理都显示一致的效果
+        transform: scaleY(.5); // 使用淘宝rem后，处理不处理都显示一致的效果
       }
     }
   }

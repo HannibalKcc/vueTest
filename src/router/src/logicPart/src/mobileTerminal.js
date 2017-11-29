@@ -1,11 +1,16 @@
-import mobileTerminalBorder1px from '../../../../components/logic/mobileTerminal/mobileTerminalBorder1px.vue';
+import MobileTerminal from '../../../../components/logic/mobileTerminal/mobileTerminal.vue';
+import Border1px from '../../../../components/logic/mobileTerminal/border1px.vue';
 
 export default {
   farName: 'mobileTerminal',
   classChild: [
     {
-      path: 'mobileTerminalBorder1px',
-      component: mobileTerminalBorder1px
+      path: '/mobileTerminal',
+      component: MobileTerminal
+    },
+    {
+      path: '/mobileTerminalBorder1px',
+      component: Border1px
     }
   ]
 };

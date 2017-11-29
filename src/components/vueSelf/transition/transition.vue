@@ -22,7 +22,7 @@
       transition属性与auto搭配会失效。变相的解决方法为类似max-height的属性，
       但是在关闭时会有延迟，原因是关闭动画会从max-height的值开始算。<br>
       <br>
-      曲线救国：使用js控制
+      曲线救国：使用额外js控制
     </p>
     <div class="demoBlock foldTest">
       <button @click="foldShow = !foldShow">折叠开关</button>
