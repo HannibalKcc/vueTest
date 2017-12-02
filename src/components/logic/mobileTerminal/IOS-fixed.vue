@@ -1,8 +1,6 @@
 <template>
-  <div class="mobileTerminalIOS-fixed">
+  <div class="IOS-fixed">
     <h2>移动端IOS的吸底input产生的bug</h2>
-    <router-link v-for="(item, index) in routerList" :key="index" :to="item.to">{{item.txt}}</router-link>
-    <router-view></router-view>
   </div>
 </template>
 
