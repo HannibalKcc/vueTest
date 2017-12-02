@@ -2,8 +2,7 @@
   <div class="infiniteScroll">
     <h3>描述：无限滚动</h3>
     <p class="textIndent">
-      不过样式真的丑
-      <!--怎么改呢？-->
+      无限滚动的infinite-scroll-disabled属性是有bug的，还是需要自己手动检查
     </p>
     <ul
       v-infinite-scroll="loadMore"
