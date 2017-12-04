@@ -12,7 +12,7 @@ import Key from '../../components/vueSelf/key.vue';
 import VModel from '../../components/vueSelf/v-model/v-model.vue';
 import Sync from '../../components/vueSelf/sync/sync.vue';
 import Global from '../../components/vueSelf/global/global.vue';
-import Hello from '../../components/Hello.vue';
+// import Hello from '../../components/Hello.vue';
 import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
 
 export default {

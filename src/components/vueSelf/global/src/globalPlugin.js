@@ -2,11 +2,11 @@
 exports.install = (Vue, option) => {
   // 全局函数
   Vue.prototype.globalFun1 = () => {
-    alert('hello world');
+    alert('Global Function:hello world');
   };
   Vue.prototype.log = (val) => {
     console.log(val);
   };
   // 全局变量
-  Vue.prototype.a = 996;
+  Vue.prototype.globalA = 996;
 };
