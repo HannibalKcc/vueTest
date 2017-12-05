@@ -14,6 +14,7 @@ import Sync from '../../components/vueSelf/sync/sync.vue';
 import Global from '../../components/vueSelf/global/global.vue';
 // import Hello from '../../components/Hello.vue';
 import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
+import VueFile from '../../components/vueSelf/vueFile/vueFile.vue';
 
 export default {
   farName: 'vuePart',
@@ -96,6 +97,11 @@ export default {
       path: '/keepAlive',
       component: KeepAlive,
       info: '组件keep-alive'
+    },
+    {
+      path: '/vueFile',
+      component: VueFile,
+      info: '.vue文件研究'
     }
   ]
 };

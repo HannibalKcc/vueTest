@@ -10,9 +10,9 @@ import Mint from 'mint-ui'; // mint-ui
 import 'mint-ui/lib/style.css'; // mint-ui-css
 import ElementUI from 'element-ui'; // element-ui
 import 'element-ui/lib/theme-default/index.css';  // element-ui-css
-import 'vue-fullpage/vue-fullpage.css';
 import VueFullpage from 'vue-fullpage';
-// './components/utils/vee-validate'路径也是可行的，因为当路径为目录时，import、require会依次寻找目录下的package.jsonv、index.js、index.json、index.node
+import 'vue-fullpage/vue-fullpage.css';
+// './components/utils/vee-validate'路径也是可行的，因为当路径为目录时，import、require会依次寻找目录下的package.json、index.js、index.json、index.node
 import './components/utils/vee-validate/index.js';  // 表单验证
 import myGlobal from './components/vueSelf/global/src/globalPlugin.js'; // 全局函数
 import globalComponent from './components/vueSelf/global/src/globalComponent.vue';  // 全局组件

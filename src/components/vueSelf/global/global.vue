@@ -31,12 +31,19 @@
       <div id="wrap3">
         先渲染，然后挂载
       </div>
+      <div id="wrap4">
+        extend .vue文件
+      </div>
+      <div id="wrap5">
+        component()与extend()都返回构造器
+      </div>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import Vue from 'vue';
+  import tmp from './src/tmp.vue';
 
   export default {
     methods: {
@@ -52,7 +59,7 @@
         // 创建构造器，必须通过new实例化 不存在$extend
         var Profile = Vue.extend({
           template: `<div class="selfWindow">
-                        <h6>通过Vue.extend创建子类，并且使用mount()挂载到指定标签内</h6>
+                        <h6>通过Vue.extend创建子类，并且使用mount()挂载到指定标签</h6>
                         <p>data数据展示{{firstName}} {{lastName}} aka {{alias}}</p>
                       </div>`,
           created () {
@@ -74,6 +81,10 @@
         setTimeout(() => {
           document.getElementById('wrap3').appendChild(component.$el);  // 但是会成为子组件而非替换挂载元素
         }, 3e3);
+        var Profile2 = Vue.extend(tmp); // .vue文件并没有显示export出template，但实际上有
+        new Profile2({el: '#wrap4'}); // eslint-disable-line
+        var Profile3 = Vue.component('global-component'); // 获取构造器
+        new Profile3({el: '#wrap5'}); // eslint-disable-line
       }
     }
   };
