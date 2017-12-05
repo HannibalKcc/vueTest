@@ -27,13 +27,13 @@
     .son {
       color: #00B7FF;
       .deepSon {
-        color: #2c3e50;
+        color: #502540;
       }
     }
   }
 
-  /*深度作用选择器不生效*/
-  .son /deep/ .deepSonCom {
-  color: #77ff48;
+  /*深度作用选择器不生效 版本问题12.2开始支持*/
+  .far /deep/ .deepSon {
+    color: #77ff48;
   }
 </style>
