@@ -20,6 +20,7 @@ import Generator from '../../../components/logic/generator.vue';
 import Promise from '../../../components/logic/promise.vue';
 import Notification from '../../../components/logic/notification.vue';
 import RichText from '../../../components/logic/richText.vue';
+import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
 
 export default {
   farName: 'logicPart',
@@ -126,6 +127,11 @@ export default {
       path: '/richText',
       component: RichText,
       info: '富文本编辑器'
+    },
+    {
+      path: '/myScroll',
+      component: MyScroll,
+      info: '自做Scroll'
     }
   ]
 };

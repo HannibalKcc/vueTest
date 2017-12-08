@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "better-scroll": "^1.5.5",
     "ejs": "^2.5.7",
     "element-ui": "^1.4.7",
     "express": "^4.15.4",
