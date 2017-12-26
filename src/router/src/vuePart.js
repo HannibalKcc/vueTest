@@ -15,6 +15,7 @@ import Global from '../../components/vueSelf/global/global.vue';
 // import Hello from '../../components/Hello.vue';
 import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
 import VueFile from '../../components/vueSelf/vueFile/vueFile.vue';
+import Directives from '../../components/vueSelf/directives.vue';
 
 export default {
   farName: 'vuePart',
@@ -102,6 +103,11 @@ export default {
       path: '/vueFile',
       component: VueFile,
       info: '.vue文件研究'
+    },
+    {
+      path: '/directives',
+      component: Directives,
+      info: 'vue自定义指令'
     }
   ]
 };
