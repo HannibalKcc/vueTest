@@ -9,13 +9,13 @@
     "stage-2"
   ],
   "plugins": [
-    "transform-runtime", // 避免编译后的输出重复
-    ["component", [ // 部分引入ele-ui
-      {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
-      }
-    ]]
+    "transform-runtime" // 避免编译后的输出重复
+//    ["component", [ // 部分引入ele-ui
+//      {
+//        "libraryName": "element-ui",
+//        "styleLibraryName": "theme-chalk"
+//      }
+//    ]]
   ],
   "env": {
     "test": {

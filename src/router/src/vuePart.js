@@ -1,8 +1,9 @@
 // vue部分
 import Transition from '../../components/vueSelf/transition/transition.vue';
 import PropSlot from '../../components/vueSelf/slot/slot.vue';
-import Resource from '../../components/vueSelf/resource.vue';
 import Tree from '../../components/vueSelf/tree/tree.vue';
+import Vuex from '../../components/vueSelf/vuex/vuex.vue';
+import Resource from '../../components/vueSelf/resource.vue';
 import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
 import SecondRouterA from '../../components/vueSelf/vue-router/src/a.vue';
 import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
@@ -31,14 +32,19 @@ export default {
       info: 'solt槽'
     },
     {
-      path: '/resource',
-      component: Resource,
-      info: 'vue-resource'
-    },
-    {
       path: '/tree',
       component: Tree,
       info: '递归组件'
+    },
+    {
+      path: '/vuex',
+      component: Vuex,
+      info: 'vuex'
+    },
+    {
+      path: '/resource',
+      component: Resource,
+      info: 'vue-resource'
     },
     {
       path: '/vueRouter',

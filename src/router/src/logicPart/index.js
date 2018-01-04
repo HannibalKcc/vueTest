@@ -21,6 +21,7 @@ import Promise from '../../../components/logic/promise.vue';
 import Notification from '../../../components/logic/notification.vue';
 import RichText from '../../../components/logic/richText.vue';
 import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
+import LazyImg from '../../../components/logic/lazyImg.vue';
 
 export default {
   farName: 'logicPart',
@@ -132,6 +133,11 @@ export default {
       path: '/myScroll',
       component: MyScroll,
       info: '自做Scroll'
+    },
+    {
+      path: '/lazyImg',
+      component: LazyImg,
+      info: '实现懒加载'
     }
   ]
 };
