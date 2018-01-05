@@ -39,6 +39,13 @@
           <button type="submit">提交</button>
         </form>
       </div>
+
+      <h3>切换提示语言</h3>
+      <div class="demoBlock">
+        <my-com v-model="testEg3" v-validate="'required|mobile'" name="eg7"></my-com>
+        <span class="err" v-show="errors.has('eg7')">{{errors.first('eg7')}}</span>
+        <button @click="changeLanguage">切换语言</button>
+      </div>
     </div>
   </div>
 </template>
@@ -72,6 +79,10 @@
             return;
           }
         });
+      },
+      changeLanguage () {
+        this.locale = this.$validator.locale === 'en' ? 'zh_CN' : 'en';
+        this.$validator.localize(this.locale);
       }
     }
   };
