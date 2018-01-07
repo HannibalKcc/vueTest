@@ -26,46 +26,6 @@
     data () {
       return {
         routersList: routesRaw
-//        routers: [
-//          // vue部分
-//          {to: '/transition', inf: 'vue-transition组件'},
-//          {to: '/propSlot', inf: 'vue-slot'},
-//          {to: '/resource', inf: 'vue-Resource'},
-//          {to: '/vueRouter', inf: 'vue-router'},
-//          {to: '/tree', inf: 'vue-递归组件与树形图'},
-//          {to: '/key', inf: 'vue-key'},
-//          {to: '/vModel', inf: 'vue-v-model'},
-//          {to: '/sync', inf: 'vue-sync修饰符'},
-//          {to: '/global', inf: 'vue-全局变量、函数'},
-//          {to: '/keepAlive', inf: 'vue-keepAlive'},
-//          // 逻辑
-//          {to: '/sort', inf: 'logic-排序'},
-//          {to: '/forLoop', inf: 'logic-es6 循环'},
-//          {to: '/import-export', inf: 'logic-es6 import&export'},
-//          {to: '/object', inf: 'logic- 对象问题'},
-//          {to: '/touchPenetration', inf: 'logic- 移动端点击穿透'},
-//          {to: '/currentTarget', inf: 'logic- target&currentTarget'},
-//          {to: '/array', inf: 'logic- 数组问题'},
-//          {to: '/mobileTerminal', inf: 'logic- 移动端'},
-//          {to: '/getCamera', inf: 'logic- input的各种用法'},
-//          {to: '/iife', inf: 'logic- 立即执行函数'},
-//          {to: '/svg', inf: 'logic- svg'},
-//          {to: '/this', inf: 'logic- this问题'},
-//          {to: '/condenseImg', inf: 'logic- canvas'},
-//          {to: '/regExp', inf: 'logic- 正则表达式的各种验证'},
-//          {to: '/mvvm', inf: 'logic- 双向绑定的实现'},
-//          {to: '/navigatorAPI', inf: 'logic- navigator'},
-//          {to: '/generator', inf: 'logic- es6-Generator'},
-//          {to: '/promise', inf: 'logic- es6-Promise'},
-//          {to: '/notification', inf: 'logic- H5特性notification'},
-//          {to: '/richtext', inf: 'logic- 富文本编辑器'},
-//          // 工具
-//          {to: '/fullPage', inf: 'utils- fullPage'},
-//          {to: '/mintUI', inf: 'utils- mintUI'},
-//          {to: '/aMap', inf: 'utils- 高德地图'},
-//          {to: '/veeValidate', inf: 'veeValidate表单验证'},
-//          {to: '/wx', inf: '微信'}
-//        ]
       };
     }
   };
