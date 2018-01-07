@@ -1,31 +1,43 @@
 <template>
   <div class="svg">
-    <div class="content">
-      <h3>描述：SVG描边</h3>
+    <h2>SVG</h2>
+
+    <h3>SVG描边</h3>
+    <div class="demoBlock">
       <svg class="stroke" width="800" height="200">
         <text class="text" text-anchor="middle" x="50%" y="50%"
-        v-for="(item, index) in 4" :class="'text' + (index + 1)">
+              v-for="(item, index) in 4" :class="'text' + (index + 1)">
           awesome storke!
         </text>
         <text class="text" text-anchor="middle" x="50%" y="80%"
-        v-for="(item, index) in 4" :class="'text' + (index + 1)">
+              v-for="(item, index) in 4" :class="'text' + (index + 1)">
           中文效果
         </text>
+      </svg>
+    </div>
+
+    <h3>SVG科学地引入</h3>
+    <div class="demoBlock">
+      <icon iconClass="gongchengshi"/>
+      <svg>
+        <use xlink:href="#icon-watch"/>
       </svg>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  export default {};
+  import icon from './src/icon.vue';
+  import '../../../assets/img/svg/animals.svg';
+  import '../../../assets/img/svg/watch.svg';
+
+  export default {
+    components: {icon}
+  };
 </script>
 
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   .svg {
-
-  }
-
-  .content {
 
   }
 

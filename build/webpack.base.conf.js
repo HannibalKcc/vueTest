@@ -3,7 +3,12 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve(dir) {
+// TODO 引入所有svg文件
+// const requireAll = requireContext => requireContext.keys().map(requireContext);
+// const req = require.context('./src/assests/img/svg', false, /\.svg$/);  // 貌似需要webpack3.0支持
+// requireAll(req);
+
+function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -48,8 +53,17 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.svg$/, // 处理svg，别忘了exclude处理url-loader!
+        loader: 'svg-sprite-loader',
+        include: [resolve('src/assets/img/svg')],
+        options: {
+          symbolId: 'icon-[name]'
+        }
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
+        exclude: [resolve('src/assets/img/svg')],
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')

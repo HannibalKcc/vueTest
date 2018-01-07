@@ -9,7 +9,7 @@ import TouchPenetration from '../../../components/logic/touchPenetration.vue';
 import CurrentTarget from '../../../components/logic/currentTarget.vue';
 import Array from '../../../components/logic/array.vue';
 import IIFE from '../../../components/logic/IIFE.vue';
-import SVG from '../../../components/logic/svg.vue';
+import SVG from '../../../components/logic/svg/svg.vue';
 import This from '../../../components/logic/this.vue';
 import CondenseImg from '../../../components/logic/canvas.vue';
 import RegExp from '../../../components/logic/regExp.vue';
