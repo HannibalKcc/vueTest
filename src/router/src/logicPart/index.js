@@ -18,6 +18,7 @@ import GetCamera from '../../../components/logic/input.vue';
 import NavigatorAPI from '../../../components/logic/navigatorAPI.vue';
 import Generator from '../../../components/logic/generator.vue';
 import Promise from '../../../components/logic/promise.vue';
+import Async from '../../../components/logic/async.vue';
 import Notification from '../../../components/logic/notification.vue';
 import RichText from '../../../components/logic/richText.vue';
 import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
@@ -118,6 +119,11 @@ export default {
       path: '/promise',
       component: Promise,
       info: 'es6 Promise'
+    },
+    {
+      path: '/async',
+      component: Async,
+      info: 'es6 Async'
     },
     {
       path: '/notification',

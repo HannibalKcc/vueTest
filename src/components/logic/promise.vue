@@ -51,6 +51,8 @@
 
 <script type="text/ecmascript-6">
   export default {
+    mounted () {
+    },
     data () {
       return {
         time: 0,  // 计时用的时间
