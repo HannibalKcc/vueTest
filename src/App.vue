@@ -36,7 +36,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 60px 10px 0;
+    padding: 10px 10px 0;
     font-family: 'Microsoft YaHei', Arial;
     -webkit-font-smoothing: antialiased; // 字体抗锯齿
     -moz-osx-font-smoothing: grayscale;
@@ -53,9 +53,11 @@
 
   .routerBox {
     flex: 0 0 200px;
+    max-height: 830px;
     padding-bottom: 100px;
     border-right: 3px solid #404040;
     margin-right: 20px;
+    overflow-y: scroll;
     text-align: left;
     .router {
       margin: 10px 5px;

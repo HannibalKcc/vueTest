@@ -34,4 +34,7 @@
   .setCursor {
     cursor: pointer;
   }
+  .nodeName:hover{
+    text-shadow: 1px 1px 0px #dd6f6c;
+  }
 </style>
