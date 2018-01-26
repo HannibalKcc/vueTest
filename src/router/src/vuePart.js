@@ -17,6 +17,7 @@ import Global from '../../components/vueSelf/global/global.vue';
 import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
 import VueFile from '../../components/vueSelf/vueFile/vueFile.vue';
 import Directives from '../../components/vueSelf/directives.vue';
+import MixinExtend from '../../components/vueSelf/mixinExtend/mixinExtend.vue';
 
 export default {
   farName: 'vuePart',
@@ -114,6 +115,11 @@ export default {
       path: '/directives',
       component: Directives,
       info: 'vue自定义指令'
+    },
+    {
+      path: '/mixin-extend',
+      component: MixinExtend,
+      info: 'vue组件的混合与继承'
     }
   ]
 };
