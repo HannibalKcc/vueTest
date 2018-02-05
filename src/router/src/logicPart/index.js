@@ -23,6 +23,7 @@ import Notification from '../../../components/logic/notification.vue';
 import RichText from '../../../components/logic/richText.vue';
 import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
 import LazyImg from '../../../components/logic/lazyImg.vue';
+import Queen8 from '../../../components/logic/queens8.vue';
 
 export default {
   farName: 'logicPart',
@@ -144,6 +145,11 @@ export default {
       path: '/lazyImg',
       component: LazyImg,
       info: '实现懒加载'
+    },
+    {
+      path: '/queen8',
+      component: Queen8,
+      info: '八皇后问题'
     }
   ]
 };
