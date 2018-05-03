@@ -13,7 +13,13 @@
 </template>
 
 <script type="text/ecmascript-6">
-  export default {};
+  export default {
+  	data () {
+  		return {
+  			msg: '测试rebase'
+  		}
+  	}
+  };
 </script>
 
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
