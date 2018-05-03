@@ -16,7 +16,7 @@
   export default {
   	data () {
   		return {
-  			msg: '测试rebase'
+  			msg: '测试rebase2'
   		}
   	}
   };
