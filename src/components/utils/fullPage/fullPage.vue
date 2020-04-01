@@ -17,7 +17,7 @@
 
 <script type="text/ecmascript-6">
   import $ from 'jquery';
-  import 'fullPage.js';
+  import 'fullpage.js';
   export default {
     mounted () {
       this.initFullPage();

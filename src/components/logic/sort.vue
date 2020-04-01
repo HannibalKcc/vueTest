@@ -7,10 +7,10 @@
     <hr>
     <h3>描述：对于取值为整数、范围较小、大量数据排序，桶排序相比于快排有明显的优势!</h3>
     <select v-model="seleMin">
-      <option v-for="val in min" :value="val">{{val}}</option>
+      <option v-for="(val, index) in min" :key="index" :value="val">{{val}}</option>
     </select>
     <select v-model="seleMax">
-      <option v-for="val in max" :value="val">{{val}}</option>
+      <option v-for="(val, index) in max" :key="index" :value="val">{{val}}</option>
     </select>
     <input type="text" placeholder="count" v-model="count" style="width: 3em;">
     <button @click="getVS">bucketsort VS quicksort</button>

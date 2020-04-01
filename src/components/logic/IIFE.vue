@@ -29,7 +29,7 @@
       return {};
     },
     methods: {
-      foo () {  // 还是要调用foo()才能执行其中的IIFE
+      foo () { // 还是要调用foo()才能执行其中的IIFE
         ((function (count) {
           console.log(count);
         })(6));

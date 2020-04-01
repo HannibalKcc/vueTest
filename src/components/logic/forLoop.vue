@@ -27,7 +27,7 @@
         console.log('---forEach遍历数组---');
         this.arr1.forEach((val, index) => {
           // break; 无法允许的语法
-          if (index === 5) return;  // return只跳出当前迭代，并非全部迭代
+          if (index === 5) return; // return只跳出当前迭代，并非全部迭代
           console.log(val, index);
         });
       },
@@ -47,7 +47,7 @@
           console.log(keyVal);
         }
         console.log('---for of遍历普通对象---');
-        for (var key of Object.keys(this.object1)) {  // 遍历与数组不相似的对象需要使用Object的entries()、keys()、values()
+        for (var key of Object.keys(this.object1)) { // 遍历与数组不相似的对象需要使用Object的entries()、keys()、values()
           console.log(key + ': ' + this.object1[key]);
         }
       },
@@ -58,7 +58,7 @@
          */
         console.log('---for in遍历对象---');
         for (let key in this.object1) {
-          console.log(key, this.object1[key]);  // 这里无法直接使用this.object1.key
+          console.log(key, this.object1[key]); // 这里无法直接使用this.object1.key
         }
       }
     }

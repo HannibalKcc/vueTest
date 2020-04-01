@@ -1,22 +1,17 @@
-// http://eslint.org/docs/user-guide/configuring
-
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
+  'root': true,
+  'env': {
+    'node': true
   },
-  env: {
-    browser: true,
-  },
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  'extends': [
+    'plugin:vue/essential',
+    '@vue/standard'
   ],
-  // add your custom rules here
+  'parserOptions': {
+    'parser': 'babel-eslint'
+  },
   'rules': {
+    'object-curly-spacing': 0,
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
@@ -28,8 +23,22 @@ module.exports = {
     // my：声明未使用 警告
     'no-unused-vars': 1,
     // my：缩进 无
-    'indent': 0
+    'indent': 0,
+    'space-before-function-paren': 0,
+    'prefer-const': 0,
+    'no-prototype-builtins': 0
   },
+  'overrides': [
+    {
+      'files': [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+      ],
+      'env': {
+        'mocha': true
+      }
+    }
+  ],
   'globals': {
     'Swiper': true
   }

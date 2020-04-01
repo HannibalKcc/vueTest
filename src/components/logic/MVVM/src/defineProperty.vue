@@ -32,7 +32,7 @@
       add () {
         Object.defineProperty(this.obj, 'age', {enumerable: false, value: 18});
         Object.defineProperty(this.obj, 'color', {enumerable: true, value: '黄色'}); // 注意枚举与否在组件上与console中的差别
-        this.$set(this.obj, 'sex', '公');  // 官方文档所使用
+        this.$set(this.obj, 'sex', '公'); // 官方文档所使用
         console.log('obj:', this.obj);
       },
       change () {

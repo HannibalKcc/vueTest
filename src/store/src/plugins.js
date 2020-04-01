@@ -11,4 +11,4 @@ const localStoragePlugin = store => {
   });
 };
 
-export default [localStoragePlugin];  // plugins的值需要是数组
+export default [localStoragePlugin]; // plugins的值需要是数组

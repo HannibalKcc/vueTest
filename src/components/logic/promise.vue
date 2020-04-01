@@ -30,9 +30,8 @@
     <div class="demoBlock">
       依次请求豆瓣ID：1764796、3541415、1794171
       <button @click="jdStart([1764796,3541415,1794171])">开始</button>
-      <span v-for="item in moviesList">{{item.title}}&nbsp;&nbsp;</span>
+      <span v-for="(item, index) in moviesList" :key="index">{{item.title}}&nbsp;&nbsp;</span>
     </div>
-
 
     <h3>Promise.all(...promise)</h3>
     <p>
@@ -55,7 +54,7 @@
     },
     data () {
       return {
-        time: 0,  // 计时用的时间
+        time: 0, // 计时用的时间
         demo1Txt: '',
         interval: null, // 计时器，用于清空
         moviesList: [] // 电影列表

@@ -39,7 +39,7 @@
       enter (el, done) {
         Velocity(el, {
           top: ['500px', [0.09, -0.43, 0.91, 0.38]],
-          left: '500px',  // 不可以直接写0
+          left: '500px', // 不可以直接写0
           opacity: 0.5, // 不能赋string
           rotateZ: '100deg',
           scale: [1.5, 'easeInOutSine'],

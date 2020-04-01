@@ -87,13 +87,13 @@
         this.obj5 = JSON.parse(JSON.stringify(this.obj1));
       },
       objBracket () {
-        this.obj6['txt'] = '胡汉三'; // 可以直接使用字符串
+        this.obj6.txt = '胡汉三'; // 可以直接使用字符串
         let old = 'old';  // eslint-disable-line
         this.obj6.old = 88;
         // this.obj6.'error' 报错！点后面不能加字符串
       },
       objMixin (source) {
-        if (arguments.length === 1 || arguments[2] === []) return source;  // 退出循环
+        if (arguments.length === 1 || arguments[2] === []) return source; // 退出循环
         let s = JSON.parse(JSON.stringify(source));
         let arg = [];
         for (let i = 0; i < arguments.length; i++) {
@@ -112,7 +112,7 @@
         if (arg.slice(2).length === 0) {
           return s;
         } else {
-          arg.splice(1, 2, s);  // 检测到多余2个参数后，剔除已合并参数，刷新source
+          arg.splice(1, 2, s); // 检测到多余2个参数后，剔除已合并参数，刷新source
           return this.objMixin.apply(this.objMixin, arg); // apply改变传参方式
         }
       }

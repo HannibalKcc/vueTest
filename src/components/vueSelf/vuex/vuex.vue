@@ -37,7 +37,7 @@
         'reduceCounts'
       ]),
       ...mapActions([
-        'asyncAdd'  // 映射为this.$store.dispatch('asyncAdd')
+        'asyncAdd' // 映射为this.$store.dispatch('asyncAdd')
       ])
     }
   };

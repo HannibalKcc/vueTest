@@ -19,7 +19,7 @@
     },
     methods: {
       change () {
-        this.value[1].tit = 999;  // 不会报错，视图也没有被修改
+        this.value[1].tit = 999; // 不会报错，视图也没有被修改
         // this.value.splice(1, 1, 666); // 不会报错，视图被修改
         // this.value = 333;   // 报错，视图被修改
       }

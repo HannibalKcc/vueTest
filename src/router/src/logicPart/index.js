@@ -3,7 +3,6 @@ import MobileTerminal from './src/mobileTerminal.js';
 
 import Sort from '../../../components/logic/sort.vue';
 import ForLoop from '../../../components/logic/forLoop.vue';
-const ImportExport = () => import('../../../components/logic/import&export/import&export.vue');
 import Object from '../../../components/logic/object.vue';
 import TouchPenetration from '../../../components/logic/touchPenetration.vue';
 import CurrentTarget from '../../../components/logic/currentTarget.vue';
@@ -24,6 +23,8 @@ import RichText from '../../../components/logic/richText.vue';
 import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
 import LazyImg from '../../../components/logic/lazyImg.vue';
 import Queen8 from '../../../components/logic/queens8.vue';
+
+const ImportExport = () => import('../../../components/logic/import&export/import&export.vue');
 
 export default {
   farName: 'logicPart',

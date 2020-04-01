@@ -8,16 +8,16 @@ import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
 import SecondRouterA from '../../components/vueSelf/vue-router/src/a.vue';
 import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
 import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
-const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue');  // 异步组件
 import Key from '../../components/vueSelf/key.vue';
 import VModel from '../../components/vueSelf/v-model/v-model.vue';
 import Sync from '../../components/vueSelf/sync/sync.vue';
 import Global from '../../components/vueSelf/global/global.vue';
-// import Hello from '../../components/Hello.vue';
 import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
 import VueFile from '../../components/vueSelf/vueFile/vueFile.vue';
 import Directives from '../../components/vueSelf/directives.vue';
 import MixinExtend from '../../components/vueSelf/mixinExtend/mixinExtend.vue';
+
+const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue'); // 异步组件
 
 export default {
   farName: 'vuePart',
@@ -54,7 +54,7 @@ export default {
       // 二级路由，配置children
       children: [
         {
-          path: 'a',  // 不要写/a因为那代表了根目录下的a标签
+          path: 'a', // 不要写/a因为那代表了根目录下的a标签
           component: SecondRouterA
         },
         {
@@ -73,7 +73,7 @@ export default {
         },
         {
           path: 'd',
-          component: SecondRouterD  //  异步组件引入
+          component: SecondRouterD //  异步组件引入
         }
       ]
     },

@@ -11,6 +11,7 @@
   import messageBox from './src/msgBox.vue';
   import infiniteScroll from './src/infiniteScroll.vue';
   export default {
+    // eslint-disable-next-line
     components: {messageBox, infiniteScroll}
   };
 </script>

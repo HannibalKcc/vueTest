@@ -15,7 +15,7 @@
       }
     },
     beforeCreate () {
-      this.$options.components.treeNode = require('./treeNode.vue');  // 文档中这里需要加一个后缀default，但经过反复测试均为undefined
+      this.$options.components.treeNode = require('./treeNode.vue'); // 文档中这里需要加一个后缀default，但经过反复测试均为undefined
     }
   };
 </script>

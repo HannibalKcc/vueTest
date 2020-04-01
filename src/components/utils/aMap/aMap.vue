@@ -35,15 +35,15 @@
       initCloud () {
         let that = this;
         AMap.plugin('AMap.CloudDataLayer', function () {
-          let CloudData = new AMap.CloudDataLayer('59b9e4742376c11dabff9f76', {});  // 获取云图
-          CloudData.setMap(that.theMap);  // 添加到地图上
+          let CloudData = new AMap.CloudDataLayer('59b9e4742376c11dabff9f76', {}); // 获取云图
+          CloudData.setMap(that.theMap); // 添加到地图上
           AMap.event.addListener(CloudData, 'click', function (result) {
             var clouddata = result.data;
             var infoWindow = new AMap.InfoWindow({
-              content: '哈哈哈哈',    // 可以写String、HTMLElement
+              content: '哈哈哈哈', // 可以写String、HTMLElement
               offset: new AMap.Pixel(0, -34)
             });
-            infoWindow.open(that.theMap, clouddata._location);  // 打开信息窗体
+            infoWindow.open(that.theMap, clouddata._location); // 打开信息窗体
           });
         });
       },
@@ -55,11 +55,11 @@
         this.theMap.plugin('AMap.Geolocation', function () {
           that.theGeolocation = new AMap.Geolocation({
             timeout: 10000, // 超过10秒后停止定位，默认：无穷大
-            convert: true,  // 自动偏移坐标，偏移后的坐标为高德坐标，默认：true
+            convert: true, // 自动偏移坐标，偏移后的坐标为高德坐标，默认：true
             buttonPosition: 'LB', // 定位按钮停靠位置，默认：'LB'，左下角
             buttonOffset: new AMap.Pixel(10, 20), // 定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
-            panToLocation: true,  // 定位成功后将定位到的位置作为地图中心点，默认：true
-            zoomToAccuracy: true  // 定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+            panToLocation: true, // 定位成功后将定位到的位置作为地图中心点，默认：true
+            zoomToAccuracy: true // 定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
           });
           that.theMap.addControl(that.theGeolocation);
           that.theGeolocation.getCurrentPosition();

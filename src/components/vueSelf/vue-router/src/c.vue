@@ -19,7 +19,7 @@
             title: '错误',
             message: '不点赞不许走！'
           });
-        next(false);  // 不合条件就拒绝跳转
+        next(false); // 不合条件就拒绝跳转
       } else {
         this.$notify.success({
           title: '成功',

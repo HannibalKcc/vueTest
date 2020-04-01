@@ -12,7 +12,7 @@
       infinite-scroll-listen-for-event="manualLoad">
       <!-- infinite-scroll-immediate-check立即自检查 -->
       <!-- infinite-scroll-listen-for-event用vue.on监听函数，使手动检查成为可能 -->
-      <li :class="{borderB: index !== list.length - 1}" v-for="(item, index) in list">{{ item }}</li>
+      <li :class="{borderB: index !== list.length - 1}" v-for="(item, index) in list" :key="index">{{ item }}</li>
     </ul>
     <button @click="emit">手动检查是否启动loadMore</button>
   </div>

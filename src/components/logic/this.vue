@@ -15,8 +15,8 @@
 
       // 回调函数 固定方法 例子：定时器
       this.timeout(showThis); // Window
-      this.timeout(showThis.bind(this));  // VueComponent
-      this.timeout(showThis.apply(this, []));  // VueComponent
+      this.timeout(showThis.bind(this)); // VueComponent
+      this.timeout(showThis.apply(this, [])); // VueComponent
       // 嵌套函数 固定方法 例子：ajax请求
       // 略 箭头函数
     },

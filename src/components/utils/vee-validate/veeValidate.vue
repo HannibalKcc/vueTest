@@ -68,7 +68,7 @@
         // 验证所有表单
         this.$validator.validateAll().then((result) => {
           if (result) { // result = true | false
-            return;
+
           }
         });
       },
@@ -76,7 +76,7 @@
         // 验证指定表单
         this.$validator.validateAll(scope).then((result) => {
           if (result) {
-            return;
+
           }
         });
       },

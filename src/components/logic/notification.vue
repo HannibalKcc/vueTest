@@ -21,7 +21,7 @@
     },
     data () {
       return {
-        n: null,  // notify实例
+        n: null, // notify实例
         count: 0
       };
     },

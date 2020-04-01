@@ -79,7 +79,7 @@
         // 或者，在文档之外渲染并且随后挂载
         var component = new Profile().$mount();
         setTimeout(() => {
-          document.getElementById('wrap3').appendChild(component.$el);  // 但是会成为子组件而非替换挂载元素
+          document.getElementById('wrap3').appendChild(component.$el); // 但是会成为子组件而非替换挂载元素
         }, 3e3);
         var Profile2 = Vue.extend(tmp); // .vue文件并没有显示export出template，但实际上有
         new Profile2({el: '#wrap4'}); // eslint-disable-line

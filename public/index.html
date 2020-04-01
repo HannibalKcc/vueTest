@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+
+        <!--打开DNS预读取-->
+        <meta http-equiv="x-dns-prefetch-control" content="off">
+        <!--强制查询主机名，针对页面中没有出现的域进行预读取-->
+        <link rel="dns-prefetch" href="https://api.douban.com">
+
+        <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://webapi.amap.com/maps?v=1.4.0&key=1698fdc3e94b89f0f10b87a6605a350f">
+        </script>
+    </head>
+    <body>
+        <noscript>
+            <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+                enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+    </body>
+</html>

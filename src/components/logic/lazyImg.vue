@@ -4,7 +4,7 @@
     <h3>利用getBoundingClientRect()判断dom当前的位置，并判断加载</h3>
     <div class="demoBlock">
       <ul class="img-list">
-        <li class="img-item" v-for="(item, index) in 100">
+        <li class="img-item" v-for="(item, index) in 100" :key="index">
           <img alt="loading" class="lazyImg"
                :data-src="imgList[index%4]">
         </li>
