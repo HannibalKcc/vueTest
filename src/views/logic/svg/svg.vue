@@ -12,7 +12,7 @@
         </text>
         <text
           class="text" text-anchor="middle" x="50%" y="80%"
-          v-for="(item, index) in 4" :key="index" :class="'text' + (index + 1)">
+          v-for="(item, index) in 4" :key="'2st' + index" :class="'text' + (index + 1)">
           中文效果
         </text>
       </svg>

@@ -1,9 +1,9 @@
 // 工具
-import FullPage from '../../../components/utils/fullPage/fullPage.vue';
+import FullPage from '../../../views/utils/fullPage/fullPage.vue';
 import mintUi from './src/mint-ui';
-import AMap from '../../../components/utils/aMap/aMap.vue';
-import VeeValidate from '../../../components/utils/vee-validate/veeValidate.vue';
-import WX from '../../../components/utils/wx/wx.vue';
+import AMap from '../../../views/utils/aMap/aMap.vue';
+import VeeValidate from '../../../views/utils/vee-validate/veeValidate.vue';
+import WX from '../../../views/utils/wx/wx.vue';
 
 export default {
   farName: 'utilsPart',

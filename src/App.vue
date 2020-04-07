@@ -2,8 +2,10 @@
   <div id="app">
     <div class="content">
       <ul class="routerBox">
-        <tree-far v-for="(item, index) in routersList" :key="index"
-                  :nodeData="item"></tree-far>
+        <tree-far
+          v-for="(item, index) in routersList" :key="index"
+          :nodeData="item">
+        </tree-far>
       </ul>
       <div class="viewBox">
         <router-view/>
@@ -17,13 +19,13 @@
 <script>
   import {routesRaw} from './router/index.js';
 
-  import flotageQrCode from './components/others/flotageQrCode.vue';
-  import treeFar from './components/others/treeNode.vue';
+  import flotageQrCode from './views/others/flotageQrCode.vue';
+  import treeFar from './views/others/treeNode.vue';
 
   export default {
     name: 'app',
     components: {flotageQrCode, treeFar},
-    data () {
+    data() {
       return {
         routersList: routesRaw
       };

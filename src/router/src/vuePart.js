@@ -1,23 +1,23 @@
 // vue部分
-import Transition from '../../components/vueSelf/transition/transition.vue';
-import PropSlot from '../../components/vueSelf/slot/slot.vue';
-import Tree from '../../components/vueSelf/tree/tree.vue';
-import Vuex from '../../components/vueSelf/vuex/vuex.vue';
-import Resource from '../../components/vueSelf/resource.vue';
-import VueRouter from '../../components/vueSelf/vue-router/vue-router.vue';
-import SecondRouterA from '../../components/vueSelf/vue-router/src/a.vue';
-import SecondRouterB from '../../components/vueSelf/vue-router/src/b.vue';
-import SecondRouterC from '../../components/vueSelf/vue-router/src/c.vue';
-import Key from '../../components/vueSelf/key.vue';
-import VModel from '../../components/vueSelf/v-model/v-model.vue';
-import Sync from '../../components/vueSelf/sync/sync.vue';
-import Global from '../../components/vueSelf/global/global.vue';
-import KeepAlive from '../../components/vueSelf/keep-alive/keep-alive.vue';
-import VueFile from '../../components/vueSelf/vueFile/vueFile.vue';
-import Directives from '../../components/vueSelf/directives.vue';
-import MixinExtend from '../../components/vueSelf/mixinExtend/mixinExtend.vue';
+import Transition from '../../views/vueSelf/transition/transition.vue';
+import PropSlot from '../../views/vueSelf/slot/slot.vue';
+import Tree from '../../views/vueSelf/tree/tree.vue';
+import Vuex from '../../views/vueSelf/vuex/vuex.vue';
+import Resource from '../../views/vueSelf/resource.vue';
+import VueRouter from '../../views/vueSelf/vue-router/vue-router.vue';
+import SecondRouterA from '../../views/vueSelf/vue-router/src/a.vue';
+import SecondRouterB from '../../views/vueSelf/vue-router/src/b.vue';
+import SecondRouterC from '../../views/vueSelf/vue-router/src/c.vue';
+import Key from '../../views/vueSelf/key.vue';
+import VModel from '../../views/vueSelf/v-model/v-model.vue';
+import Sync from '../../views/vueSelf/sync/sync.vue';
+import Global from '../../views/vueSelf/global/global.vue';
+import KeepAlive from '../../views/vueSelf/keep-alive/keep-alive.vue';
+import VueFile from '../../views/vueSelf/vueFile/vueFile.vue';
+import Directives from '../../views/vueSelf/directives.vue';
+import MixinExtend from '../../views/vueSelf/mixinExtend/mixinExtend.vue';
 
-const SecondRouterD = () => import('../../components/vueSelf/vue-router/src/d.vue'); // 异步组件
+const SecondRouterD = () => import('../../views/vueSelf/vue-router/src/d.vue'); // 异步组件
 
 export default {
   farName: 'vuePart',

@@ -1,6 +1,6 @@
-import MintUi from '../../../../components/utils/mint-ui/mint-ui.vue';
-import InfiniteScroll from '../../../../components/utils/mint-ui/src/infiniteScroll.vue';
-import MsgBox from '../../../../components/utils/mint-ui/src/msgBox.vue';
+import MintUi from '../../../../views/utils/mint-ui/mint-ui.vue';
+import InfiniteScroll from '../../../../views/utils/mint-ui/src/infiniteScroll.vue';
+import MsgBox from '../../../../views/utils/mint-ui/src/msgBox.vue';
 
 export default {
   farName: 'mintUi',

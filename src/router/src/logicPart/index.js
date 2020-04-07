@@ -1,30 +1,30 @@
 // 逻辑
 import MobileTerminal from './src/mobileTerminal.js';
 
-import Sort from '../../../components/logic/sort.vue';
-import ForLoop from '../../../components/logic/forLoop.vue';
-import Object from '../../../components/logic/object.vue';
-import TouchPenetration from '../../../components/logic/touchPenetration.vue';
-import CurrentTarget from '../../../components/logic/currentTarget.vue';
-import Array from '../../../components/logic/array.vue';
-import IIFE from '../../../components/logic/IIFE.vue';
-import SVG from '../../../components/logic/svg/svg.vue';
-import This from '../../../components/logic/this.vue';
-import CondenseImg from '../../../components/logic/canvas.vue';
-import RegExp from '../../../components/logic/regExp.vue';
-import MVVM from '../../../components/logic/MVVM/MVVM.vue';
-import GetCamera from '../../../components/logic/input.vue';
-import NavigatorAPI from '../../../components/logic/navigatorAPI.vue';
-import Generator from '../../../components/logic/generator.vue';
-import Promise from '../../../components/logic/promise.vue';
-import Async from '../../../components/logic/async.vue';
-import Notification from '../../../components/logic/notification.vue';
-import RichText from '../../../components/logic/richText.vue';
-import MyScroll from '../../../components/logic/myScroll/myScroll.vue';
-import LazyImg from '../../../components/logic/lazyImg.vue';
-import Queen8 from '../../../components/logic/queens8.vue';
+import Sort from '../../../views/logic/sort.vue';
+import ForLoop from '../../../views/logic/forLoop.vue';
+import Object from '../../../views/logic/object.vue';
+import TouchPenetration from '../../../views/logic/touchPenetration.vue';
+import CurrentTarget from '../../../views/logic/currentTarget.vue';
+import Array from '../../../views/logic/array.vue';
+import IIFE from '../../../views/logic/IIFE.vue';
+import SVG from '../../../views/logic/svg/svg.vue';
+import This from '../../../views/logic/this.vue';
+import CondenseImg from '../../../views/logic/canvas.vue';
+import RegExp from '../../../views/logic/regExp.vue';
+import MVVM from '../../../views/logic/MVVM/MVVM.vue';
+import GetCamera from '../../../views/logic/input.vue';
+import NavigatorAPI from '../../../views/logic/navigatorAPI.vue';
+import Generator from '../../../views/logic/generator.vue';
+import Promise from '../../../views/logic/promise.vue';
+import Async from '../../../views/logic/async.vue';
+import Notification from '../../../views/logic/notification.vue';
+import RichText from '../../../views/logic/richText.vue';
+import MyScroll from '../../../views/logic/myScroll/myScroll.vue';
+import LazyImg from '../../../views/logic/lazyImg.vue';
+import Queen8 from '../../../views/logic/queens8.vue';
 
-const ImportExport = () => import('../../../components/logic/import&export/import&export.vue');
+const ImportExport = () => import('../../../views/logic/import&export/import&export.vue');
 
 export default {
   farName: 'logicPart',

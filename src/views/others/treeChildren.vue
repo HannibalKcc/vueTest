@@ -1,6 +1,10 @@
 <template>
   <ul class="treeChildren wrap">
-    <tree-node v-for="(item, index) in childrenList" :key="index" :nodeData="item"></tree-node>
+    <tree-node
+      v-for="(item, index) in childrenList" :key="index"
+      :nodeData="item"
+      @click.native="$router.push(item.path)">
+    </tree-node>
   </ul>
 </template>
 
@@ -15,7 +19,7 @@
       }
     },
     beforeCreate () {
-      this.$options.components.treeNode = require('./treeNode.vue'); // 文档中这里需要加一个后缀default，但经过反复测试均为undefined
+      this.$options.components.treeNode = require('./treeNode.vue').default;
     }
   };
 </script>
@@ -23,5 +27,6 @@
 <style scoped rel="stylesheet/less" type="text/less" lang="less">
   .wrap {
     padding-left: 30px;
+    cursor: pointer;
   }
 </style>
