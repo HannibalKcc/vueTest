@@ -15,7 +15,7 @@
     "ejs": "^2.5.7",
     "element-ui": "^1.4.7",
     "express": "^4.15.4",
-    "fullpage.js": "^2.9.4",
+    "fullpage.js": "^4.0.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
