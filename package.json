@@ -14,7 +14,7 @@
     "core-js": "^3.6.4",
     "ejs": "^2.5.7",
     "element-ui": "^1.4.7",
-    "express": "^4.15.4",
+    "express": "^4.17.3",
     "fullpage.js": "^2.9.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
